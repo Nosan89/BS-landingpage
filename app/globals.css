@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-deep: #060e1a;
+  --color-navy: #0a1628;
+  --color-navy-light: #0f1f38;
+  --color-navy-lighter: #162a4a;
+  --color-emerald: #10b981;
+  --color-emerald-bright: #34d399;
+  --color-emerald-dark: #059669;
+  --color-red-accent: #ef4444;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+}
+
+:root {
+  --emerald-glow: rgba(16, 185, 129, 0.12);
+  --emerald-glow-strong: rgba(16, 185, 129, 0.25);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: #060e1a;
+  color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fadeUp { animation: fadeUp 0.8s ease-out both; }
+.animate-fadeIn { animation: fadeIn 0.6s ease-out both; }
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-float-delayed { animation: float 4s ease-in-out 1s infinite; }
+.animate-pulse-dot { animation: pulse-dot 2s infinite; }
+
+/* ===== REVEAL ON SCROLL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.4s; }
+
+/* ===== SECTION LABEL ===== */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #10b981;
+  margin-bottom: 20px;
+}
+.section-label::before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #10b981;
+}
+
+/* ===== SECTION DIVIDER ===== */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(16,185,129,0.15), transparent);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: #10b981;
+  color: #060e1a;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  background: #34d399;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(16,185,129,0.35);
+}
+.btn-primary svg { transition: transform 0.3s; }
+.btn-primary:hover svg { transform: translateX(4px); }
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: transparent;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.12);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-ghost:hover { border-color: #10b981; color: #34d399; }
+
+/* ===== PHONE FRAME ===== */
+.phone-frame {
+  max-width: 320px;
+  margin: 0 auto;
+  background: #060e1a;
+  border-radius: 32px;
+  border: 3px solid rgba(255,255,255,0.08);
+  padding: 12px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+.phone-frame-inner {
+  border-radius: 22px;
+  overflow: hidden;
+}
+.phone-frame-inner img { width: 100%; display: block; }
+
+/* ===== FAQ ===== */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-answer.open { max-height: 400px; }
+
+/* ===== COMPARISON TABLE ===== */
+.comp-check { color: #10b981; font-size: 18px; }
+.comp-x { color: #ef4444; font-size: 18px; }
