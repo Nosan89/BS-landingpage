@@ -44,9 +44,9 @@ export default function Comparison() {
         </ScrollReveal>
 
         <ScrollReveal delay="d1">
-          <div style={{ maxWidth: 900, margin: '60px auto 0', border: '1px solid rgba(255,255,255,0.06)', overflow: 'hidden' }}>
-            {/* Header */}
-            <div className="comp-row-grid">
+          <div className="comp-table" style={{ maxWidth: 900, margin: '60px auto 0', border: '1px solid rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+            {/* Header — display:contents so cells join the parent grid */}
+            <div style={{ display: 'contents' }}>
               <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1 }} />
               <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1, textAlign: 'center', background: 'rgba(239,68,68,0.06)', color: '#94a3b8' }}>
                 {t('BĚŽNÝ TRENÉR', 'TYPICAL COACH')}
@@ -57,14 +57,14 @@ export default function Comparison() {
             </div>
 
             {rows.map((row, i) => (
-              <div key={i} className="comp-row-grid" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
-                <div className="comp-label-cell">
+              <div key={i} style={{ display: 'contents' }}>
+                <div className="comp-label-cell" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                   {t(row.cs, row.en)}
                 </div>
-                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', background: 'rgba(239,68,68,0.02)' }}>
+                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', background: 'rgba(239,68,68,0.02)', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                   {renderCell(row, 'bad')}
                 </div>
-                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#34d399', background: 'rgba(16,185,129,0.03)', fontWeight: 600 }}>
+                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#34d399', background: 'rgba(16,185,129,0.03)', fontWeight: 600, borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                   {renderCell(row, 'good')}
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function Comparison() {
         </ScrollReveal>
 
         <style>{`
-          .comp-row-grid {
+          .comp-table {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
           }
@@ -86,7 +86,7 @@ export default function Comparison() {
             align-items: center;
           }
           @media (max-width: 640px) {
-            .comp-row-grid {
+            .comp-table {
               grid-template-columns: 1.4fr 1fr 1fr;
             }
             .comp-label-cell {
