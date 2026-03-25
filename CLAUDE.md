@@ -74,3 +74,13 @@ Settings → Domains → Add → biostrategy.co
 
 - `/podminky` — obchodní podmínky, obsah dodá právnička
 - `/ochrana-soukromi` — GDPR privacy policy, obsah dodá právnička
+
+## Screenshoty platformy (TODO)
+
+Až budou dostupné nové dark mode screenshoty, vyměnit v `public/images/`:
+- `coach_triage.PNG` → coach dashboard
+- `blood_markers.PNG` → blood markers
+- `training_app.jpg` → perform / training app
+- `protocols.jpg` → health protocols
+
+Použití je v `components/Platform.tsx`.

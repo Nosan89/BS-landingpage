@@ -60,8 +60,8 @@ export default function Hero() {
               maxWidth: 520, marginBottom: 44, animationDelay: '0.15s',
             }}>
               {t(
-                'Jsem Jakub Nosek — 2× olympionik, fyzioterapeut, S&C coach. Kombinuji wearables, krevní markery, CGM a trénink na vlastní platformě. Prémiový health coaching pro high performery.',
-                "I'm Jakub Nosek — 2× Olympian, physiotherapist, S&C coach. I combine wearables, blood biomarkers, CGM and training on a custom platform. Premium health coaching for high performers."
+                'Prémiový health coaching postavený na datech, ne dojmech. Wearables, krevní markery, CGM, DEXA — a trenér, který to celé řídí. Pro ty, kteří odmítají obětovat zdraví za byznys.',
+                'Premium health coaching built on data, not guesswork. Wearables, blood markers, CGM, DEXA — and a coach who runs it all. For those who refuse to sacrifice health for business.'
               )}
             </p>
 

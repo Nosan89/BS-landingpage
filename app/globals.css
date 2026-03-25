@@ -169,3 +169,8 @@ body {
 /* ===== COMPARISON TABLE ===== */
 .comp-check { color: #10b981; font-size: 18px; }
 .comp-x { color: #ef4444; font-size: 18px; }
+
+/* ===== NAVBAR MOBILE ===== */
+@media (max-width: 640px) {
+  .nav-cta-btn { display: none !important; }
+}

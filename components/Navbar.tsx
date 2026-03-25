@@ -54,6 +54,7 @@ export default function Navbar() {
           </div>
           <a
             href="#cta"
+            className="nav-cta-btn"
             style={{
               padding: '10px 28px', background: '#10b981', color: '#060e1a',
               fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 800,

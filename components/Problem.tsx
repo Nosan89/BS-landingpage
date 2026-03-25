@@ -10,14 +10,14 @@ const stats = [
     en: 'of entrepreneurs suffer from at least one mental health issue',
   },
   {
-    num: '35%',
+    num: '2×',
     cs: 'vyšší riziko infarktu u lidí pracujících 55+ hodin týdně',
     en: 'higher heart attack risk for 55+ hour work weeks',
   },
   {
-    num: '42',
+    num: '35',
     cs: 'průměrný věk, kdy začínají první vážné komplikace',
-    en: 'average age when serious complications begin',
+    en: 'average age when serious health complications begin',
   },
 ]
 
@@ -38,18 +38,25 @@ export default function Problem() {
         <ScrollReveal delay="d1">
           <p style={{ maxWidth: 780, margin: '36px auto 0', fontSize: 19, lineHeight: 1.8, color: '#cbd5e1' }}>
             {t(
-              'Každý rok přicházejí ke mně klienti, kteří jsou na vrcholu kariéry — ale jejich tělo tiše volá o pomoc.',
-              'Every year, clients come to me at the peak of their career — but their body is quietly crying out for help.'
-            )}{' '}
+              'Usínáš s e-maily, vstáváš s notifikacemi. ',
+              'You fall asleep to emails, wake up to notifications. '
+            )}
+            <strong style={{ color: '#ffffff' }}>
+              {t('Spánek? 5 hodin, možná 6.', 'Sleep? 5 hours, maybe 6.')}
+            </strong>
+            {t(
+              ' Cvičení? Když zbude čas. Jíš to, co je po ruce. A říkáš si — ',
+              ' Exercise? When there\'s time. You eat whatever\'s available. '
+            )}
             <strong style={{ color: '#ffffff' }}>
               {t(
-                'Burnout, poruchy spánku, hormonální dysbalance, metabolický syndrom.',
-                'Burnout, sleep disorders, hormonal imbalance, metabolic syndrome.'
+                'až dodělám tenhle deal, tenhle kvartál, tenhle rok…',
+                'After this deal, this quarter, this year…'
               )}
-            </strong>{' '}
+            </strong>
             {t(
-              'Výsledky bez dat jsou jen štěstí. A štěstí nestačí.',
-              'Results without data are just luck. And luck is not enough.'
+              ' Jenže ten rok nikdy nepřijde. A tělo ti účet vystaví bez předchozího upozornění.',
+              " But that year never comes. And your body sends the bill without warning."
             )}
           </p>
         </ScrollReveal>
