@@ -2,9 +2,11 @@
 
 import Image from 'next/image'
 import { useLang } from './LangContext'
+import { useModal } from './ModalContext'
 
 export default function Hero() {
   const { t } = useLang()
+  const { openModal } = useModal()
 
   return (
     <section
@@ -66,12 +68,12 @@ export default function Hero() {
             </p>
 
             <div className="animate-fadeUp" style={{ display: 'flex', gap: 16, flexWrap: 'wrap', animationDelay: '0.3s' }}>
-              <a href="#cta" className="btn-primary">
+              <button onClick={openModal} className="btn-primary">
                 <span>{t('Zjisti, jestli je to pro tebe', 'Find Out If You Qualify')}</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </a>
+              </button>
               <a href="#story" className="btn-ghost">
                 {t('Můj příběh', 'My Story')}
               </a>

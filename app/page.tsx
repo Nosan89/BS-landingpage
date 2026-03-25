@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import QuestionnaireModal from '@/components/QuestionnaireModal'
 import Hero from '@/components/Hero'
 import Credentials from '@/components/Credentials'
 import Story from '@/components/Story'
@@ -14,6 +15,7 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <>
+      <QuestionnaireModal />
       <Navbar />
       <main>
         <Hero />

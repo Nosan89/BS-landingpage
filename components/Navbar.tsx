@@ -3,9 +3,11 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useLang } from './LangContext'
+import { useModal } from './ModalContext'
 
 export default function Navbar() {
   const { lang, setLang, t } = useLang()
+  const { openModal } = useModal()
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -52,13 +54,13 @@ export default function Navbar() {
               </button>
             ))}
           </div>
-          <a
-            href="#cta"
+          <button
+            onClick={openModal}
             className="nav-cta-btn"
             style={{
               padding: '10px 28px', background: '#10b981', color: '#060e1a',
               fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 800,
-              letterSpacing: '0.5px', textDecoration: 'none', textTransform: 'uppercase',
+              letterSpacing: '0.5px', border: 'none', cursor: 'pointer', textTransform: 'uppercase',
               transition: 'all 0.3s',
             }}
             onMouseEnter={e => {
@@ -73,7 +75,7 @@ export default function Navbar() {
             }}
           >
             {t('Zjistit více', 'Learn More')}
-          </a>
+          </button>
         </div>
       </div>
     </nav>

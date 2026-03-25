@@ -1,10 +1,12 @@
 'use client'
 
 import { useLang } from './LangContext'
+import { useModal } from './ModalContext'
 import ScrollReveal from './ScrollReveal'
 
 export default function FinalCTA() {
   const { t } = useLang()
+  const { openModal } = useModal()
 
   return (
     <section id="cta" style={{ padding: '130px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
@@ -31,12 +33,12 @@ export default function FinalCTA() {
             )}
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
-            <a href="mailto:jakub.nosek@biostrategy.co" className="btn-primary">
+            <button onClick={openModal} className="btn-primary">
               <span>{t('Vyplnit dotazník', 'Take the Questionnaire')}</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </a>
+            </button>
             <a href="mailto:jakub.nosek@biostrategy.co" className="btn-ghost">
               {t('Zarezervovat konzultaci', 'Book a Consultation')}
             </a>

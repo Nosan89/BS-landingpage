@@ -14,14 +14,17 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 
 ```
 app/
-  layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider
-  page.tsx                — hlavní landing page
+  layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider + ModalProvider
+  page.tsx                — hlavní landing page + QuestionnaireModal
   globals.css             — Tailwind v4 import, CSS custom properties, animace
+  api/questionnaire/route.ts — POST endpoint, odesílá email přes Resend
   podminky/page.tsx       — obchodní podmínky (placeholder)
   ochrana-soukromi/page.tsx — GDPR / privacy (placeholder)
 
 components/
   LangContext.tsx         — CZ/EN context + useLang hook
+  ModalContext.tsx        — modal open/close context + useModal hook
+  QuestionnaireModal.tsx  — 4-krokový kvalifikační dotazník (modal overlay)
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)
@@ -84,3 +87,14 @@ Dark mode screenshoty v `public/images/`:
 - `protocols.jpg` — health protocols
 
 Použití je v `components/Platform.tsx`. Až přibudou nové screenshoty, stačí soubory přepsat (stejný název) — kód se nemusí měnit.
+
+## Kvalifikační dotazník (modal)
+
+Otevírá se po kliknutí na všechna CTA tlačítka (Hero, Navbar, FinalCTA).
+
+- **4 kroky:** Kdo jsi → Situace → Motivace → Závazek
+- **Email:** odesílá se přes Resend na jakub.nosek@biostrategy.co
+- **API route:** `POST /api/questionnaire`
+- **ENV var:** `RESEND_API_KEY` — nastavit v Vercel dashboardu (Settings → Environment Variables)
+- **Sender:** `noreply@biostrategy.co` — doména biostrategy.co musí být ověřena v Resend dashboardu
+- CZ/EN plně podporováno

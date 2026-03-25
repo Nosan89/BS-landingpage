@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Bebas_Neue, Manrope } from 'next/font/google'
 import './globals.css'
 import { LangProvider } from '@/components/LangContext'
+import { ModalProvider } from '@/components/ModalContext'
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -26,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="cs" className={`${bebasNeue.variable} ${manrope.variable}`}>
       <body>
-        <LangProvider>{children}</LangProvider>
+        <LangProvider><ModalProvider>{children}</ModalProvider></LangProvider>
       </body>
     </html>
   )
