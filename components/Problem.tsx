@@ -84,6 +84,13 @@ export default function Problem() {
           grid-template-columns: repeat(3, 1fr);
           gap: 24px;
           margin-top: 56px;
+          align-items: stretch;
+        }
+        .problem-cards .reveal {
+          height: 100%;
+        }
+        .problem-cards .reveal > div {
+          height: 100%;
         }
         @media (max-width: 768px) {
           .problem-cards { grid-template-columns: 1fr; }
