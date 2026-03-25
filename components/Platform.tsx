@@ -14,7 +14,7 @@ const items = [
       { cs: 'Semaforové color-coding', en: 'Traffic light color-coding' },
       { cs: '14denní trendy', en: '14-day trends' },
     ],
-    img: '/images/coach_triage.PNG',
+    img: '/images/coach_triage.jpg',
     reverse: false,
   },
   {
@@ -26,7 +26,7 @@ const items = [
       { cs: '4úrovňový longevity systém', en: '4-level longevity system' },
       { cs: 'Historické srovnání', en: 'Historical comparison' },
     ],
-    img: '/images/blood_markers.PNG',
+    img: '/images/blood_markers.jpg',
     reverse: true,
   },
   {

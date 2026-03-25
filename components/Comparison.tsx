@@ -46,7 +46,7 @@ export default function Comparison() {
         <ScrollReveal delay="d1">
           <div style={{ maxWidth: 900, margin: '60px auto 0', border: '1px solid rgba(255,255,255,0.06)', overflow: 'hidden' }}>
             {/* Header */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr' }}>
+            <div className="comp-row-grid">
               <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1 }} />
               <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1, textAlign: 'center', background: 'rgba(239,68,68,0.06)', color: '#94a3b8' }}>
                 {t('BĚŽNÝ TRENÉR', 'TYPICAL COACH')}
@@ -57,20 +57,44 @@ export default function Comparison() {
             </div>
 
             {rows.map((row, i) => (
-              <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
-                <div style={{ padding: '16px 24px', fontSize: 14, fontWeight: 600, color: '#cbd5e1', display: 'flex', alignItems: 'center' }}>
+              <div key={i} className="comp-row-grid" style={{ borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+                <div className="comp-label-cell">
                   {t(row.cs, row.en)}
                 </div>
-                <div style={{ padding: '16px 24px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', background: 'rgba(239,68,68,0.02)' }}>
+                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', background: 'rgba(239,68,68,0.02)' }}>
                   {renderCell(row, 'bad')}
                 </div>
-                <div style={{ padding: '16px 24px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#34d399', background: 'rgba(16,185,129,0.03)', fontWeight: 600 }}>
+                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#34d399', background: 'rgba(16,185,129,0.03)', fontWeight: 600 }}>
                   {renderCell(row, 'good')}
                 </div>
               </div>
             ))}
           </div>
         </ScrollReveal>
+
+        <style>{`
+          .comp-row-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          .comp-label-cell {
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #cbd5e1;
+            display: flex;
+            align-items: center;
+          }
+          @media (max-width: 640px) {
+            .comp-row-grid {
+              grid-template-columns: 1.4fr 1fr 1fr;
+            }
+            .comp-label-cell {
+              padding: 12px 10px;
+              font-size: 12px;
+            }
+          }
+        `}</style>
       </div>
     </section>
   )

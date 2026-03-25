@@ -75,12 +75,12 @@ Settings → Domains → Add → biostrategy.co
 - `/podminky` — obchodní podmínky, obsah dodá právnička
 - `/ochrana-soukromi` — GDPR privacy policy, obsah dodá právnička
 
-## Screenshoty platformy (TODO)
+## Screenshoty platformy
 
-Až budou dostupné nové dark mode screenshoty, vyměnit v `public/images/`:
-- `coach_triage.PNG` → coach dashboard
-- `blood_markers.PNG` → blood markers
-- `training_app.jpg` → perform / training app
-- `protocols.jpg` → health protocols
+Dark mode screenshoty v `public/images/`:
+- `coach_triage.jpg` — coach dashboard (dark mode, aktualizováno 25/3)
+- `blood_markers.jpg` — blood markers (dark mode, aktualizováno 25/3)
+- `training_app.jpg` — perform / training app
+- `protocols.jpg` — health protocols
 
-Použití je v `components/Platform.tsx`.
+Použití je v `components/Platform.tsx`. Až přibudou nové screenshoty, stačí soubory přepsat (stejný název) — kód se nemusí měnit.
