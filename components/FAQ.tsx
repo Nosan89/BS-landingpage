@@ -8,14 +8,14 @@ const faqs = [
   {
     qCs: 'Pro koho je BioStrategy?',
     qEn: 'Who is BioStrategy for?',
-    aCs: 'Pro zakladatele, manažery a high performery, kteří chtějí optimalizovat zdraví a výkon na základě dat — ne obecných rad. Pracuji s lidmi, kteří berou zdraví vážně a jsou ochotni investovat do sebe.',
-    aEn: 'For founders, executives, and high performers who want to optimize health and performance based on data — not generic advice. I work with people who take health seriously and are willing to invest in themselves.',
+    aCs: 'Pro zakladatele, manažery a high performery, kteří chtějí optimalizovat zdraví a výkon na základě dat - ne obecných rad. Pracuji s lidmi, kteří berou zdraví vážně a jsou ochotni investovat do sebe.',
+    aEn: 'For founders, executives, and high performers who want to optimize health and performance based on data - not generic advice. I work with people who take health seriously and are willing to invest in themselves.',
   },
   {
     qCs: 'Kolik to stojí?',
     qEn: 'How much does it cost?',
-    aCs: 'Coaching je prémiový a individuálně oceněný. Cena závisí na délce spolupráce a rozsahu — diskutujeme to na konzultaci. Není to levné, ale je to investice, která se vrátí.',
-    aEn: 'Coaching is premium and individually priced. The cost depends on collaboration length and scope — we discuss this on the consultation call. It\'s not cheap, but it\'s an investment that pays off.',
+    aCs: 'Coaching je prémiový a individuálně oceněný. Cena závisí na délce spolupráce a rozsahu - diskutujeme to na konzultaci. Není to levné, ale je to investice, která se vrátí.',
+    aEn: 'Coaching is premium and individually priced. The cost depends on collaboration length and scope - we discuss this on the consultation call. It\'s not cheap, but it\'s an investment that pays off.',
   },
   {
     qCs: 'Musím být v Praze?',
@@ -26,14 +26,14 @@ const faqs = [
   {
     qCs: 'Jaké wearable potřebuji?',
     qEn: 'What wearable do I need?',
-    aCs: 'Oura Ring nebo Whoop — vybereme společně při onboardingu.',
-    aEn: 'Oura Ring or Whoop — we\'ll choose together during onboarding.',
+    aCs: 'Oura Ring nebo Whoop - vybereme společně při onboardingu.',
+    aEn: 'Oura Ring or Whoop - we\'ll choose together during onboarding.',
   },
   {
     qCs: 'Proč zrovna ty?',
     qEn: 'Why you?',
-    aCs: 'Dvě olympiády se sluchovým handicapem. Fyzioterapie. Certifikovaný S&C coach. A vlastní platforma od nuly. Nekopíruji — tvořím.',
-    aEn: "Two Olympics with a hearing disability. Physiotherapy degree. Certified S&C coach. Custom platform from scratch. I don't copy — I create.",
+    aCs: 'Dvě olympiády se sluchovým handicapem. Fyzioterapie. Certifikovaný S&C coach. A vlastní platforma od nuly. Nekopíruji - tvořím.',
+    aEn: "Two Olympics with a hearing disability. Physiotherapy degree. Certified S&C coach. Custom platform from scratch. I don't copy - I create.",
   },
 ]
 

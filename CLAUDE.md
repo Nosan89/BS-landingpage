@@ -28,7 +28,7 @@ components/
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)
-  Story.tsx               — timeline (9 položek: 1993, 2001, 2014, 2015, 2016, 2018, 2020, 2022, 2026) + fotky + citát
+  Story.tsx               — timeline (10 položek: 1993, 2001, 2014, 2015, 2016×2, 2018, 2020, 2022, 2026) + fotky + citát
   Problem.tsx             — 3 statistiky
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy
   Services.tsx            — 4 service karty
@@ -48,6 +48,7 @@ public/
 - **Colors:** navy-deep `#060e1a`, navy `#0a1628`, emerald `#10b981`, emerald-bright `#34d399`
 - **Fonts:** Bebas Neue (display), Manrope (body)
 - **Tailwind v4:** konfigurace přes `@theme {}` v globals.css, žádný tailwind.config.js
+- **Pomlčky:** v celém projektu se používá krátká pomlčka `-`, nikoliv em dash `—` ani en dash `–`
 
 ## Jazykový přepínač
 

@@ -267,19 +267,19 @@ export default function QuestionnaireModal() {
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
                     <SelectGroup
                       label={t('Kolik hodin týdně pracuješ?', 'How many hours do you work per week?')}
-                      options={['40–50', '50–60', '60–70', '70+']}
+                      options={['40-50', '50-60', '60-70', '70+']}
                       value={data.workHours}
                       onChange={v => setData(d => ({ ...d, workHours: v }))}
                     />
                     <SelectGroup
                       label={t('Jak vypadá tvůj spánek?', "How's your sleep?")}
-                      options={t('Méně než 5h|5–6h|6–7h|7+h', 'Less than 5h|5–6h|6–7h|7+h').split('|')}
+                      options={t('Méně než 5h|5-6h|6-7h|7+h', 'Less than 5h|5-6h|6-7h|7+h').split('|')}
                       value={data.sleep}
                       onChange={v => setData(d => ({ ...d, sleep: v }))}
                     />
                     <SelectGroup
                       label={t('Cvičíš pravidelně?', 'Do you exercise regularly?')}
-                      options={t('Vůbec ne|Občas, když vyjde čas|1–2× týdně|3+× týdně', 'Not at all|Occasionally|1–2× per week|3+× per week').split('|')}
+                      options={t('Vůbec ne|Občas, když vyjde čas|1-2× týdně|3+× týdně', 'Not at all|Occasionally|1-2× per week|3+× per week').split('|')}
                       value={data.exercise}
                       onChange={v => setData(d => ({ ...d, exercise: v }))}
                     />

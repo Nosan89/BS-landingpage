@@ -19,8 +19,8 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'BioStrategy — Data-Driven Health Coaching',
-  description: 'Prémiový health coaching pro high performery. Wearables, krevní markery, CGM, trénink — vše na jedné platformě.',
+  title: 'BioStrategy - Data-Driven Health Coaching',
+  description: 'Prémiový health coaching pro high performery. Wearables, krevní markery, CGM, trénink - vše na jedné platformě.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'Ochrana soukromí — BioStrategy',
+  title: 'Ochrana soukromí - BioStrategy',
 }
 
 export default function OchranaPrivacy() {
@@ -25,7 +25,7 @@ export default function OchranaPrivacy() {
 
           <div style={{ color: '#94a3b8', lineHeight: 1.8, fontSize: 15 }}>
             <p style={{ marginBottom: 24, padding: 24, background: '#0f1f38', border: '1px solid rgba(16,185,129,0.1)', borderLeft: '3px solid #10b981' }}>
-              <strong style={{ color: '#34d399' }}>Placeholder — obsah dodá právnička.</strong><br />
+              <strong style={{ color: '#34d399' }}>Placeholder - obsah dodá právnička.</strong><br />
               Tento text bude nahrazen finální GDPR / privacy policy po jejím zpracování.
             </p>
 

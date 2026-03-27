@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
 
   const isCz = lang !== 'en'
 
-  const subject = `Nový zájemce: ${name}${occupation ? ` — ${occupation}` : ''}`
+  const subject = `Nový zájemce: ${name}${occupation ? ` - ${occupation}` : ''}`
 
   const html = `
 <!DOCTYPE html>
@@ -24,33 +24,33 @@ export async function POST(req: NextRequest) {
       <td style="padding: 12px 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; width: 45%;">
         ${isCz ? 'Hodiny práce/týden' : 'Work hours/week'}
       </td>
-      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${workHours || '—'}</td>
+      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${workHours || '-'}</td>
     </tr>
     <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
       <td style="padding: 12px 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
         ${isCz ? 'Spánek' : 'Sleep'}
       </td>
-      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${sleep || '—'}</td>
+      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${sleep || '-'}</td>
     </tr>
     <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
       <td style="padding: 12px 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
         ${isCz ? 'Cvičení' : 'Exercise'}
       </td>
-      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${exercise || '—'}</td>
+      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${exercise || '-'}</td>
     </tr>
     <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
       <td style="padding: 12px 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">
         ${isCz ? 'Motivace' : 'Motivation'}
       </td>
       <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">
-        ${Array.isArray(motivation) ? motivation.join(', ') : '—'}
+        ${Array.isArray(motivation) ? motivation.join(', ') : '-'}
       </td>
     </tr>
     <tr>
       <td style="padding: 12px 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; vertical-align: top;">
         ${isCz ? 'Připravenost investovat' : 'Commitment'}
       </td>
-      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${commitment || '—'}</td>
+      <td style="padding: 12px 0; font-size: 14px; font-weight: 600;">${commitment || '-'}</td>
     </tr>
   </table>
 

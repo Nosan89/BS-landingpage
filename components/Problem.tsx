@@ -45,7 +45,7 @@ export default function Problem() {
               {t('Spánek? 5 hodin, možná 6.', 'Sleep? 5 hours, maybe 6.')}
             </strong>
             {t(
-              ' Cvičení? Když zbude čas. Jíš to, co je po ruce. A říkáš si — ',
+              ' Cvičení? Když zbude čas. Jíš to, co je po ruce. A říkáš si - ',
               ' Exercise? When there\'s time. You eat whatever\'s available. '
             )}
             <strong style={{ color: '#ffffff' }}>

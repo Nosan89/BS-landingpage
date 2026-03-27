@@ -7,8 +7,8 @@ import ScrollReveal from './ScrollReveal'
 const timeline = [
   {
     year: '1993',
-    cs: { title: 'Meningitida', body: 'Ve třech letech. 100% ztráta sluchu na pravé ucho, 85% na levé. Sluchadlo se stalo součástí mého života — ale nikdy ne výmluvou.' },
-    en: { title: 'Meningitis', body: 'At age three. 100% hearing loss right ear, 85% left. A hearing aid became part of my life — but never an excuse.' },
+    cs: { title: 'Meningitida', body: 'Ve třech letech. 100% ztráta sluchu na pravé ucho, 85% na levé. Sluchadlo se stalo součástí mého života - ale nikdy ne výmluvou.' },
+    en: { title: 'Meningitis', body: 'At age three. 100% hearing loss right ear, 85% left. A hearing aid became part of my life - but never an excuse.' },
   },
   {
     year: '2001',
@@ -17,8 +17,8 @@ const timeline = [
   },
   {
     year: '2014',
-    cs: { title: 'Bakalář z fyzioterapie', body: 'FTVS UK. Chtěl jsem rozumět lidskému tělu na hlubší úrovni. Ne jen trénovat — rozumět.' },
-    en: { title: 'BSc. Physiotherapy', body: 'Charles University. I wanted to understand the human body deeply. Not just train — understand.' },
+    cs: { title: 'Bakalář z fyzioterapie', body: 'FTVS UK. Chtěl jsem rozumět lidskému tělu na hlubší úrovni. Ne jen trénovat - rozumět.' },
+    en: { title: 'BSc. Physiotherapy', body: 'Charles University. I wanted to understand the human body deeply. Not just train - understand.' },
   },
   {
     year: '2015',
@@ -27,28 +27,33 @@ const timeline = [
   },
   {
     year: '2016',
-    cs: { title: 'Bronz na MČR', body: 'Bronz na MČR ve skoku dalekém i desetiboji — výsledek dvou dekád práce, tehdy už paralelně s boby.' },
-    en: { title: 'Bronze at Czech Nationals', body: 'Bronze at the Czech Championships in long jump and decathlon — the result of two decades of work, already running parallel with bobsled.' },
+    cs: { title: 'Biohacking avant la lettre', body: 'Začal jsem systematicky řešit stravu, suplementaci, spánek a regeneraci - pro sebe, z vlastní zvědavosti. Dřív než to mělo jméno.' },
+    en: { title: 'Biohacking avant la lettre', body: 'I started systematically working on nutrition, supplementation, sleep and recovery - for myself, out of pure curiosity. Before it had a name.' },
+  },
+  {
+    year: '2016',
+    cs: { title: 'Bronz na MČR', body: 'Bronz na MČR ve skoku dalekém i desetiboji - výsledek dvou dekád práce, tehdy už paralelně s boby.' },
+    en: { title: 'Bronze at Czech Nationals', body: 'Bronze at the Czech Championships in long jump and decathlon - the result of two decades of work, already running parallel with bobsled.' },
   },
   {
     year: '2018',
-    cs: { title: 'PyeongChang — 1. olympiáda', body: 'Kluk, co neslyší, na největší sportovní scéně světa.' },
-    en: { title: 'PyeongChang — 1st Olympics', body: "The kid who can't hear, on the world's biggest sports stage." },
+    cs: { title: 'PyeongChang - 1. olympiáda', body: 'Kluk, co neslyší, na největší sportovní scéně světa.' },
+    en: { title: 'PyeongChang - 1st Olympics', body: "The kid who can't hear, on the world's biggest sports stage." },
   },
   {
     year: '2020',
-    cs: { title: '6. místo na MS ve čtyřbobech', body: '6. místo na MS ve čtyřbobech. Náš největší výsledek. A důkaz, že mezi průměrem a světovou špičkou nestojí talent — stojí tam data a systém.' },
-    en: { title: '6th at World Championships', body: '6th at the Four-man World Championships. Our greatest result. Proof that what stands between average and world-class isn\'t talent — it\'s data and a system.' },
+    cs: { title: '6. místo na MS ve čtyřbobech', body: '6. místo na MS ve čtyřbobech. Náš největší výsledek. A důkaz, že mezi průměrem a světovou špičkou nestojí talent - stojí tam data a systém.' },
+    en: { title: '6th at World Championships', body: '6th at the Four-man World Championships. Our greatest result. Proof that what stands between average and world-class isn\'t talent - it\'s data and a system.' },
   },
   {
     year: '2022',
-    cs: { title: 'Peking — 2. olympiáda', body: 'Znovu. Protože jednou nestačilo.' },
-    en: { title: 'Beijing — 2nd Olympics', body: "Again. Because once wasn't enough." },
+    cs: { title: 'Peking - 2. olympiáda', body: 'Po druhé olympiádě jsem ukončil kariéru a přesunul se na druhou stranu. Roky nasbírané zkušenosti - konečně bylo co předávat.' },
+    en: { title: 'Beijing - 2nd Olympics', body: 'After the second Olympics I ended my career and moved to the other side. Years of accumulated knowledge - finally something worth passing on.' },
   },
   {
     year: '2026',
-    cs: { title: 'Cortina — Izrael na OH', body: 'Jako trenér i závodník jsem pomohl dostat Izrael na historicky první účast v bobech na OH.' },
-    en: { title: 'Cortina — Israel at Olympics', body: 'As coach and athlete, I helped Israel reach their first-ever Olympic bobsled appearance.' },
+    cs: { title: 'Cortina - Izrael na OH', body: 'Jako trenér i závodník jsem pomohl dostat Izrael na historicky první účast v bobech na OH.' },
+    en: { title: 'Cortina - Israel at Olympics', body: 'As coach and athlete, I helped Israel reach their first-ever Olympic bobsled appearance.' },
   },
 ]
 
@@ -130,7 +135,7 @@ export default function Story() {
                   '\u201CMy whole life, people told me what I couldn\u2019t do. So I showed them what I could. Now I do the same for my clients.\u201D'
                 )}
               </p>
-              <div style={{ marginTop: 12, fontSize: 13, color: '#10b981', fontWeight: 700 }}>— Jakub Nosek</div>
+              <div style={{ marginTop: 12, fontSize: 13, color: '#10b981', fontWeight: 700 }}>- Jakub Nosek</div>
             </ScrollReveal>
           </div>
         </div>

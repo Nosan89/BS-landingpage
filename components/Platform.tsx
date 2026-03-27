@@ -7,8 +7,8 @@ import ScrollReveal from './ScrollReveal'
 const items = [
   {
     titleCs: 'COACH DASHBOARD', titleEn: 'COACH DASHBOARD',
-    bodyCs: 'Všechna tvoje data na jednom místě. Recovery, spánek, HRV, srdeční frekvence — synchronizované z Whoop nebo Oura.',
-    bodyEn: 'All your data in one place. Recovery, sleep, HRV, heart rate — synced from Whoop or Oura.',
+    bodyCs: 'Všechna tvoje data na jednom místě. Recovery, spánek, HRV, srdeční frekvence - synchronizované z Whoop nebo Oura.',
+    bodyEn: 'All your data in one place. Recovery, sleep, HRV, heart rate - synced from Whoop or Oura.',
     features: [
       { cs: 'Real-time sync z wearables', en: 'Real-time wearable sync' },
       { cs: 'Semaforové color-coding', en: 'Traffic light color-coding' },
@@ -19,8 +19,8 @@ const items = [
   },
   {
     titleCs: 'KREVNÍ MARKERY', titleEn: 'BLOOD MARKERS',
-    bodyCs: 'AI parsování výsledků z laboratoře. Longevity color-coding — ne referenční rozsahy, ale optimální hodnoty.',
-    bodyEn: 'AI-powered lab result parsing. Longevity color-coding — not reference ranges, but optimal values.',
+    bodyCs: 'AI parsování výsledků z laboratoře. Longevity color-coding - ne referenční rozsahy, ale optimální hodnoty.',
+    bodyEn: 'AI-powered lab result parsing. Longevity color-coding - not reference ranges, but optimal values.',
     features: [
       { cs: 'AI parsování PDF z Synlabu', en: 'AI parsing of Synlab PDFs' },
       { cs: '4úrovňový longevity systém', en: '4-level longevity system' },
@@ -31,8 +31,8 @@ const items = [
   },
   {
     titleCs: 'TRÉNINKOVÁ APPKA', titleEn: 'TRAINING APP',
-    bodyCs: 'BioStrategy Perform — session builder, video návody, logování setů, readiness tracking.',
-    bodyEn: 'BioStrategy Perform — session builder, video guides, set logging, readiness tracking.',
+    bodyCs: 'BioStrategy Perform - session builder, video návody, logování setů, readiness tracking.',
+    bodyEn: 'BioStrategy Perform - session builder, video guides, set logging, readiness tracking.',
     features: [
       { cs: 'Exercise library s videi', en: 'Exercise library with videos' },
       { cs: 'Block-based session builder', en: 'Block-based session builder' },
@@ -43,8 +43,8 @@ const items = [
   },
   {
     titleCs: 'HEALTH PROTOKOLY', titleEn: 'HEALTH PROTOCOLS',
-    bodyCs: 'Kognice, spánek, stres, suplementace — evidence-based protokoly s mechanismy, biomarkery a red flags.',
-    bodyEn: 'Cognition, sleep, stress, supplementation — evidence-based protocols with mechanisms, biomarkers, and red flags.',
+    bodyCs: 'Kognice, spánek, stres, suplementace - evidence-based protokoly s mechanismy, biomarkery a red flags.',
+    bodyEn: 'Cognition, sleep, stress, supplementation - evidence-based protocols with mechanisms, biomarkers, and red flags.',
     features: [
       { cs: 'Mechanismus + Protokol + Red Flagy', en: 'Mechanism + Protocol + Red Flags' },
       { cs: 'Navázané na biomarkery', en: 'Linked to biomarkers' },
@@ -77,8 +77,8 @@ export default function Platform() {
           />
           <p style={{ fontSize: 16, color: '#94a3b8', lineHeight: 1.7, maxWidth: 560 }}>
             {t(
-              'Žádná třetí strana. BioStrategy je platforma, kterou jsem postavil sám — přesně pro tohle.',
-              'No third parties. BioStrategy is a platform I built myself — specifically for this.'
+              'Žádná třetí strana. BioStrategy je platforma, kterou jsem postavil sám - přesně pro tohle.',
+              'No third parties. BioStrategy is a platform I built myself - specifically for this.'
             )}
           </p>
         </ScrollReveal>

@@ -7,8 +7,8 @@ const steps = [
   {
     num: '01',
     titleCs: 'KVALIFIKACE', titleEn: 'QUALIFY',
-    bodyCs: 'Krátký dotazník. Zjistím, jestli jsme match — nepracuji s každým.',
-    bodyEn: "Short questionnaire. I'll see if we're a match — I don't work with everyone.",
+    bodyCs: 'Krátký dotazník. Zjistím, jestli jsme match - nepracuji s každým.',
+    bodyEn: "Short questionnaire. I'll see if we're a match - I don't work with everyone.",
   },
   {
     num: '02',
@@ -25,8 +25,8 @@ const steps = [
   {
     num: '04',
     titleCs: 'OPTIMALIZACE', titleEn: 'OPTIMIZE',
-    bodyCs: 'Trénink, spánek, strava, suplementace — vše řízené daty.',
-    bodyEn: 'Training, sleep, nutrition, supplementation — all data-driven.',
+    bodyCs: 'Trénink, spánek, strava, suplementace - vše řízené daty.',
+    bodyEn: 'Training, sleep, nutrition, supplementation - all data-driven.',
   },
 ]
 

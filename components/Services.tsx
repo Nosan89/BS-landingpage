@@ -7,22 +7,22 @@ const services = [
   {
     icon: '⌚',
     titleCs: 'WEARABLE MONITORING', titleEn: 'WEARABLE MONITORING',
-    bodyCs: 'Oura nebo Whoop — kontinuální sledování spánku, HRV, recovery, zátěže. Vidím tvá data v reálném čase.',
-    bodyEn: 'Oura or Whoop — continuous sleep, HRV, recovery, strain tracking. I see your data in real-time.',
+    bodyCs: 'Oura nebo Whoop - kontinuální sledování spánku, HRV, recovery, zátěže. Vidím tvá data v reálném čase.',
+    bodyEn: 'Oura or Whoop - continuous sleep, HRV, recovery, strain tracking. I see your data in real-time.',
     tags: ['Oura', 'Whoop', 'HRV', 'Sleep'],
   },
   {
     icon: '🩸',
     titleCs: 'KREVNÍ MARKERY', titleEn: 'BLOOD BIOMARKERS',
-    bodyCs: 'Kompletní panel přes Synlab. Lipidy, hormony, záněty, vitamíny — ne to, co ti dá obvoďák.',
-    bodyEn: "Complete panel via Synlab. Lipids, hormones, inflammation, vitamins — not your GP's basic panel.",
+    bodyCs: 'Kompletní panel přes Synlab. Lipidy, hormony, záněty, vitamíny - ne to, co ti dá obvoďák.',
+    bodyEn: "Complete panel via Synlab. Lipids, hormones, inflammation, vitamins - not your GP's basic panel.",
     tags: ['ApoB', 'Lipidy / Lipids', 'Hormony / Hormones'],
   },
   {
     icon: '📊',
     titleCs: 'CGM & DEXA', titleEn: 'CGM & DEXA',
-    bodyCs: 'Dexcom G7 na 10 dní — reakce tvého těla na jídlo. DEXA scan — přesné složení těla.',
-    bodyEn: 'Dexcom G7 for 10 days — how your body responds to food. DEXA scan — precise body composition.',
+    bodyCs: 'Dexcom G7 na 10 dní - reakce tvého těla na jídlo. DEXA scan - přesné složení těla.',
+    bodyEn: 'Dexcom G7 for 10 days - how your body responds to food. DEXA scan - precise body composition.',
     tags: ['Glukóza / Glucose', 'DEXA', 'Složení těla / Body Comp'],
   },
   {

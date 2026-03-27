@@ -61,8 +61,8 @@ export default function Hero() {
               fontSize: 19, lineHeight: 1.8, color: '#cbd5e1', fontWeight: 500,
               maxWidth: 520, marginBottom: 44, animationDelay: '0.15s',
             }} dangerouslySetInnerHTML={{ __html: t(
-              'Prémiový health coaching od <strong style="color:#ffffff;font-weight:700">dvounásobného olympionika</strong>, postavený na datech, ne dojmech. Wearables, krevní markery, CGM, DEXA — a trenér, který to celé řídí. Pro ty, kteří odmítají obětovat zdraví za byznys.',
-              'Premium health coaching from a <strong style="color:#ffffff;font-weight:700">two-time olympian</strong>, built on data, not guesswork. Wearables, blood markers, CGM, DEXA — and a coach who runs it all. For those who refuse to sacrifice health for business.'
+              'Prémiový health coaching od <strong style="color:#ffffff;font-weight:700">dvounásobného olympionika</strong>, postavený na datech, ne dojmech. Wearables, krevní markery, CGM, DEXA - a trenér, který to celé řídí. Pro ty, kteří odmítají obětovat zdraví za byznys.',
+              'Premium health coaching from a <strong style="color:#ffffff;font-weight:700">two-time olympian</strong>, built on data, not guesswork. Wearables, blood markers, CGM, DEXA - and a coach who runs it all. For those who refuse to sacrifice health for business.'
             )}} />
 
             <div className="animate-fadeUp" style={{ display: 'flex', gap: 16, flexWrap: 'wrap', animationDelay: '0.3s' }}>
@@ -110,7 +110,7 @@ export default function Hero() {
                 Recovery
               </div>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, lineHeight: 1 }}>77%</div>
-              <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 2 }}>{t('Dnes — Whoop', 'Today — Whoop')}</div>
+              <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 2 }}>{t('Dnes - Whoop', 'Today - Whoop')}</div>
             </div>
 
             {/* Floating card 2 */}
@@ -123,7 +123,7 @@ export default function Hero() {
                 ApoB
               </div>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, lineHeight: 1 }}>1.02</div>
-              <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 2 }}>g/L — optimal</div>
+              <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 2 }}>g/L - optimal</div>
             </div>
           </div>
         </div>
