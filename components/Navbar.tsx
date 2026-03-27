@@ -74,7 +74,7 @@ export default function Navbar() {
               ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
             }}
           >
-            {t('Zjistit více', 'Learn More')}
+            {t('Vyplnit dotazník', 'Fill in the Questionnaire')}
           </button>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function FinalCTA() {
           <div className="section-label" style={{ justifyContent: 'center' }}>{t('Připraven?', 'Ready?')}</div>
           <h2
             style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px,4.5vw,60px)', lineHeight: 1, letterSpacing: 1, marginBottom: 0 }}
-            dangerouslySetInnerHTML={{ __html: t('PŘESTAŇ ODKLÁDAT<br>SVÉ ZDRAVÍ', 'STOP POSTPONING<br>YOUR HEALTH') }}
+            dangerouslySetInnerHTML={{ __html: t('TVŮJ BYZNYS JEDE NA DATA.<br>ZAČNI TAK ŘÍDIT I SVÉ TĚLO.', 'YOUR BUSINESS RUNS ON DATA.<br>START RUNNING YOUR BODY THE SAME WAY.') }}
           />
         </ScrollReveal>
         <ScrollReveal delay="d1">
@@ -39,9 +39,6 @@ export default function FinalCTA() {
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </button>
-            <a href="mailto:jakub.nosek@biostrategy.co" className="btn-ghost">
-              {t('Zarezervovat konzultaci', 'Book a Consultation')}
-            </a>
           </div>
         </ScrollReveal>
       </div>

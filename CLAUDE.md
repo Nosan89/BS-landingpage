@@ -105,3 +105,9 @@ Otevírá se po kliknutí na všechna CTA tlačítka (Hero, Navbar, FinalCTA).
 - **ENV var:** `RESEND_API_KEY` — nastavit v Vercel dashboardu (Settings → Environment Variables)
 - **Sender:** `noreply@biostrategy.co` — doména biostrategy.co musí být ověřena v Resend dashboardu
 - CZ/EN plně podporováno
+
+### CTA texty (aktuální stav)
+- **Navbar:** `Vyplnit dotazník` / `Fill in the Questionnaire`
+- **Hero (primární tlačítko):** `ZAČÍT KVALIFIKAČNÍM DOTAZNÍKEM →` / `START WITH THE QUALIFICATION QUESTIONNAIRE →`
+- **FinalCTA (primární tlačítko):** `Vyplnit dotazník` / `Take the Questionnaire` — sekundární tlačítko (konzultace) odstraněno
+- **FinalCTA (nadpis):** `TVŮJ BYZNYS JEDE NA DATA.<br>ZAČNI TAK ŘÍDIT I SVÉ TĚLO.` / `YOUR BUSINESS RUNS ON DATA.<br>START RUNNING YOUR BODY THE SAME WAY.`

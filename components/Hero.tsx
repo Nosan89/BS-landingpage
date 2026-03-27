@@ -58,21 +58,16 @@ export default function Hero() {
             </h1>
 
             <p className="animate-fadeUp" style={{
-              fontSize: 17, lineHeight: 1.8, color: '#cbd5e1',
+              fontSize: 19, lineHeight: 1.8, color: '#cbd5e1', fontWeight: 500,
               maxWidth: 520, marginBottom: 44, animationDelay: '0.15s',
-            }}>
-              {t(
-                'Prémiový health coaching postavený na datech, ne dojmech. Wearables, krevní markery, CGM, DEXA — a trenér, který to celé řídí. Pro ty, kteří odmítají obětovat zdraví za byznys.',
-                'Premium health coaching built on data, not guesswork. Wearables, blood markers, CGM, DEXA — and a coach who runs it all. For those who refuse to sacrifice health for business.'
-              )}
-            </p>
+            }} dangerouslySetInnerHTML={{ __html: t(
+              'Prémiový health coaching od <strong style="color:#ffffff;font-weight:700">dvounásobného olympionika</strong>, postavený na datech, ne dojmech. Wearables, krevní markery, CGM, DEXA — a trenér, který to celé řídí. Pro ty, kteří odmítají obětovat zdraví za byznys.',
+              'Premium health coaching from a <strong style="color:#ffffff;font-weight:700">two-time olympian</strong>, built on data, not guesswork. Wearables, blood markers, CGM, DEXA — and a coach who runs it all. For those who refuse to sacrifice health for business.'
+            )}} />
 
             <div className="animate-fadeUp" style={{ display: 'flex', gap: 16, flexWrap: 'wrap', animationDelay: '0.3s' }}>
               <button onClick={openModal} className="btn-primary">
-                <span>{t('Zjisti, jestli je to pro tebe', 'Find Out If You Qualify')}</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <span>{t('ZAČÍT KVALIFIKAČNÍM DOTAZNÍKEM →', 'START WITH THE QUALIFICATION QUESTIONNAIRE →')}</span>
               </button>
               <a href="#story" className="btn-ghost">
                 {t('Můj příběh', 'My Story')}
