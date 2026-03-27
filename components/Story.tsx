@@ -27,13 +27,8 @@ const timeline = [
   },
   {
     year: '2016',
-    cs: { title: 'Biohacking avant la lettre', body: 'Začal jsem systematicky řešit stravu, suplementaci, spánek a regeneraci - pro sebe, z vlastní zvědavosti. Dřív než to mělo jméno.' },
-    en: { title: 'Biohacking avant la lettre', body: 'I started systematically working on nutrition, supplementation, sleep and recovery - for myself, out of pure curiosity. Before it had a name.' },
-  },
-  {
-    year: '2016',
-    cs: { title: 'Bronz na MČR', body: 'Bronz na MČR ve skoku dalekém i desetiboji - výsledek dvou dekád práce, tehdy už paralelně s boby.' },
-    en: { title: 'Bronze at Czech Nationals', body: 'Bronze at the Czech Championships in long jump and decathlon - the result of two decades of work, already running parallel with bobsled.' },
+    cs: { title: 'Bronz a biohacking', body: 'Bronz na MČR ve skoku dalekém i desetiboji. A paralelně - začátek systematické práce na vlastním zdraví. Dřív než to mělo jméno.' },
+    en: { title: 'Bronze and biohacking', body: 'Bronze at the Czech Championships in long jump and decathlon. And in parallel - the start of systematic work on my own health. Before it had a name.' },
   },
   {
     year: '2018',
@@ -47,8 +42,8 @@ const timeline = [
   },
   {
     year: '2022',
-    cs: { title: 'Peking - 2. olympiáda', body: 'Po druhé olympiádě jsem ukončil kariéru a přesunul se na druhou stranu. Roky nasbírané zkušenosti - konečně bylo co předávat.' },
-    en: { title: 'Beijing - 2nd Olympics', body: 'After the second Olympics I ended my career and moved to the other side. Years of accumulated knowledge - finally something worth passing on.' },
+    cs: { title: 'Peking - 2. olympiáda', body: 'Druhá olympiáda. Protože jednou nestačilo. Pak jsem pověsil boby na hřebík - a začal předávat zkušenosti dál.' },
+    en: { title: 'Beijing - 2nd Olympics', body: 'A second Olympics. Because once was not enough. Then I hung up the bobsled - and started passing on what I had learned.' },
   },
   {
     year: '2026',
