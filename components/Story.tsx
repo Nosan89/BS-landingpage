@@ -82,7 +82,7 @@ export default function Story() {
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: 22, color: '#10b981', paddingTop: 2 }}>
                   {item.year}
                 </div>
-                <div>
+                <div style={{ minHeight: 64 }}>
                   <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 4, lineHeight: 1.4 }}>
                     {t(item.cs.title, item.en.title)}
                   </h3>

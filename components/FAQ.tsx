@@ -8,7 +8,7 @@ const faqs = [
   {
     qCs: 'Pro koho je BioStrategy?',
     qEn: 'Who is BioStrategy for?',
-    aCs: 'Pro zakladatele, manažery a high performery, kteří chtějí optimalizovat zdraví a výkon na základě dat - ne obecných rad. Pracuji s lidmi, kteří berou zdraví vážně a jsou ochotni investovat do sebe.',
+    aCs: 'Pro zakladatele, manažery a lidi s vysokými nároky na sebe, kteří chtějí optimalizovat zdraví a výkon na základě dat - ne obecných rad. Pracuji s lidmi, kteří berou zdraví vážně a jsou ochotni investovat do sebe.',
     aEn: 'For founders, executives, and high performers who want to optimize health and performance based on data - not generic advice. I work with people who take health seriously and are willing to invest in themselves.',
   },
   {
@@ -20,14 +20,14 @@ const faqs = [
   {
     qCs: 'Musím být v Praze?',
     qEn: 'Do I need to be in Prague?',
-    aCs: 'Ne. Většina spolupráce probíhá online přes platformu. Laboratorní testy a DEXA si zařídíš lokálně kdekoliv v ČR. Osobní setkání jsou možná, ne nutná.',
-    aEn: 'No. Most collaboration happens online through the platform. Lab tests and DEXA can be arranged locally anywhere in the Czech Republic. In-person meetings are possible but not required.',
+    aCs: 'Záleží na tom, co chceš. Krevní testy a DEXA jsou v Praze nejdostupnější, online spolupráce funguje odkudkoli v ČR. Pokud chceš osobní dohled na začátku, Praha je výhodou - pokud ne, není podmínkou.',
+    aEn: 'It depends on what you want. Blood tests and DEXA are most accessible in Prague, online collaboration works from anywhere in the Czech Republic. If you want personal supervision at the start, Prague is an advantage - if not, it is not a requirement.',
   },
   {
     qCs: 'Jaké wearable potřebuji?',
     qEn: 'What wearable do I need?',
-    aCs: 'Oura Ring nebo Whoop - vybereme společně při onboardingu.',
-    aEn: 'Oura Ring or Whoop - we\'ll choose together during onboarding.',
+    aCs: 'Aktuálně Oura Ring nebo Whoop - vybereme společně při onboardingu. Podpora dalších zařízení se rozrůstá.',
+    aEn: 'Currently Oura Ring or Whoop - we\'ll choose together during onboarding. Support for additional devices is growing.',
   },
   {
     qCs: 'Proč zrovna ty?',
