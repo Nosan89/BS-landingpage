@@ -28,7 +28,7 @@ components/
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)
-  Story.tsx               — timeline + fotky + citát
+  Story.tsx               — timeline (9 položek: 1993, 2001, 2014, 2015, 2016, 2018, 2020, 2022, 2026) + fotky + citát
   Problem.tsx             — 3 statistiky
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy
   Services.tsx            — 4 service karty

@@ -11,6 +11,11 @@ const timeline = [
     en: { title: 'Meningitis', body: 'At age three. 100% hearing loss right ear, 85% left. A hearing aid became part of my life — but never an excuse.' },
   },
   {
+    year: '2001',
+    cs: { title: 'Start v atletice', body: 'Začal jsem s atletikou. Všestranná pohybová příprava, která položila základ všemu, co přišlo po ní.' },
+    en: { title: 'Start in Athletics', body: 'I started in athletics. All-round movement training that laid the foundation for everything that followed.' },
+  },
+  {
     year: '2014',
     cs: { title: 'Bakalář z fyzioterapie', body: 'FTVS UK. Chtěl jsem rozumět lidskému tělu na hlubší úrovni. Ne jen trénovat — rozumět.' },
     en: { title: 'BSc. Physiotherapy', body: 'Charles University. I wanted to understand the human body deeply. Not just train — understand.' },
@@ -21,9 +26,19 @@ const timeline = [
     en: { title: 'Pro Bobsled Career', body: '8 seasons. One of the fastest brakemen in the world. Top 6 in World Cup and Worlds.' },
   },
   {
+    year: '2016',
+    cs: { title: 'Bronz na MČR', body: 'Bronz na MČR ve skoku dalekém i desetiboji — výsledek dvou dekád práce, tehdy už paralelně s boby.' },
+    en: { title: 'Bronze at Czech Nationals', body: 'Bronze at the Czech Championships in long jump and decathlon — the result of two decades of work, already running parallel with bobsled.' },
+  },
+  {
     year: '2018',
     cs: { title: 'PyeongChang — 1. olympiáda', body: 'Kluk, co neslyší, na největší sportovní scéně světa.' },
     en: { title: 'PyeongChang — 1st Olympics', body: "The kid who can't hear, on the world's biggest sports stage." },
+  },
+  {
+    year: '2020',
+    cs: { title: '6. místo na MS ve čtyřbobech', body: '6. místo na MS ve čtyřbobech. Náš největší výsledek. A důkaz, že mezi průměrem a světovou špičkou nestojí talent — stojí tam data a systém.' },
+    en: { title: '6th at World Championships', body: '6th at the Four-man World Championships. Our greatest result. Proof that what stands between average and world-class isn\'t talent — it\'s data and a system.' },
   },
   {
     year: '2022',
