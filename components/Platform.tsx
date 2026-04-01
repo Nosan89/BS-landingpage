@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
 import { useLang } from './LangContext'
 import ScrollReveal from './ScrollReveal'
@@ -15,7 +16,6 @@ const items = [
       { cs: '14denní trendy', en: '14-day trends' },
     ],
     img: '/images/coach_triage.jpg',
-    reverse: false,
   },
   {
     titleCs: 'KREVNÍ MARKERY', titleEn: 'BLOOD MARKERS',
@@ -27,7 +27,6 @@ const items = [
       { cs: 'Historické srovnání', en: 'Historical comparison' },
     ],
     img: '/images/blood_markers.jpg',
-    reverse: true,
   },
   {
     titleCs: 'TRÉNINKOVÁ APPKA', titleEn: 'TRAINING APP',
@@ -39,7 +38,6 @@ const items = [
       { cs: 'Readiness survey', en: 'Readiness survey' },
     ],
     img: '/images/training_app.jpg',
-    reverse: false,
   },
   {
     titleCs: 'HEALTH PROTOKOLY', titleEn: 'HEALTH PROTOCOLS',
@@ -51,7 +49,6 @@ const items = [
       { cs: 'Klientský pohled', en: 'Client-facing view' },
     ],
     img: '/images/protocols.jpg',
-    reverse: true,
   },
 ]
 
@@ -65,6 +62,9 @@ function CheckIcon() {
 
 export default function Platform() {
   const { t } = useLang()
+  const [activeTab, setActiveTab] = useState(0)
+
+  const active = items[activeTab]
 
   return (
     <section id="platform" style={{ padding: '110px 0', background: '#0a1628' }}>
@@ -83,61 +83,97 @@ export default function Platform() {
           </p>
         </ScrollReveal>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 80, marginTop: 60 }}>
-          {items.map((item, i) => (
-            <ScrollReveal key={i}>
-              <div className={`plat-item ${item.reverse ? 'plat-reverse' : ''}`}>
-                <div>
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 1, marginBottom: 10 }}>
-                    {t(item.titleCs, item.titleEn)}
-                  </h3>
-                  <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>{t(item.bodyCs, item.bodyEn)}</p>
-                  <ul style={{ listStyle: 'none', marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {item.features.map((f, fi) => (
-                      <li key={fi} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 13, color: '#cbd5e1' }}>
-                        <span style={{
-                          width: 18, height: 18, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                          background: 'var(--emerald-glow)', flexShrink: 0, color: '#10b981',
-                        }}>
-                          <CheckIcon />
-                        </span>
-                        {t(f.cs, f.en)}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <div className="phone-frame">
-                    <div className="phone-frame-inner">
-                      <Image src={item.img} alt={t(item.titleCs, item.titleEn)} width={320} height={640} style={{ width: '100%', display: 'block' }} />
-                    </div>
-                  </div>
+        {/* Tab navigation */}
+        <div className="plat-tabs-wrapper">
+          <div className="plat-tabs">
+            {items.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => setActiveTab(i)}
+                className={`plat-tab ${activeTab === i ? 'plat-tab-active' : ''}`}
+              >
+                {t(item.titleCs, item.titleEn)}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Tab content */}
+        <div key={activeTab} className="plat-content animate-fadeIn">
+          <div className="plat-item">
+            <div>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 1, marginBottom: 10 }}>
+                {t(active.titleCs, active.titleEn)}
+              </h3>
+              <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>{t(active.bodyCs, active.bodyEn)}</p>
+              <ul style={{ listStyle: 'none', marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                {active.features.map((f, fi) => (
+                  <li key={fi} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 13, color: '#cbd5e1' }}>
+                    <span style={{
+                      width: 18, height: 18, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      background: 'var(--emerald-glow)', flexShrink: 0, color: '#10b981',
+                    }}>
+                      <CheckIcon />
+                    </span>
+                    {t(f.cs, f.en)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <div className="phone-frame">
+                <div className="phone-frame-inner">
+                  <Image src={active.img} alt={t(active.titleCs, active.titleEn)} width={320} height={640} style={{ width: '100%', display: 'block' }} />
                 </div>
               </div>
-            </ScrollReveal>
-          ))}
+            </div>
+          </div>
         </div>
       </div>
 
       <style>{`
+        .plat-tabs-wrapper {
+          margin-top: 60px;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        .plat-tabs {
+          display: flex;
+          min-width: max-content;
+        }
+        .plat-tab {
+          padding: 14px 28px;
+          background: none;
+          border: none;
+          border-bottom: 2px solid transparent;
+          color: #94a3b8;
+          font-family: var(--font-display);
+          font-size: 16px;
+          letter-spacing: 1px;
+          cursor: pointer;
+          white-space: nowrap;
+          transition: all 0.2s;
+          margin-bottom: -1px;
+        }
+        .plat-tab:hover { color: #cbd5e1; }
+        .plat-tab-active {
+          color: #10b981 !important;
+          border-bottom-color: #10b981 !important;
+        }
+        .plat-content {
+          margin-top: 48px;
+        }
         .plat-item {
           display: grid;
           grid-template-columns: 1fr 1.1fr;
           gap: 48px;
           align-items: center;
         }
-        .plat-reverse {
-          direction: rtl;
-        }
-        .plat-reverse > * {
-          direction: ltr;
-        }
         @media (max-width: 1024px) {
-          .plat-item, .plat-reverse {
+          .plat-item {
             grid-template-columns: 1fr;
-            direction: ltr;
           }
-          .plat-reverse > * { direction: ltr; }
           .phone-frame { max-width: 280px !important; }
         }
       `}</style>

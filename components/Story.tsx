@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
 import { useLang } from './LangContext'
 import ScrollReveal from './ScrollReveal'
@@ -52,8 +53,35 @@ const timeline = [
   },
 ]
 
+// Indices of items always visible: 1993 (0), 2014 (2), 2018 (5)
+const VISIBLE_INDICES = new Set([0, 2, 5])
+
 export default function Story() {
   const { t } = useLang()
+  const [expanded, setExpanded] = useState(false)
+
+  const visibleItems = timeline.filter((_, i) => VISIBLE_INDICES.has(i))
+  const hiddenItems = timeline.filter((_, i) => !VISIBLE_INDICES.has(i))
+
+  const itemContent = (item: typeof timeline[0]) => (
+    <div style={{
+      display: 'grid', gridTemplateColumns: '70px 1fr',
+      gap: 20, padding: '24px 0',
+      borderBottom: '1px solid rgba(255,255,255,0.04)',
+    }}>
+      <div style={{ fontFamily: 'var(--font-display)', fontSize: 22, color: '#10b981', paddingTop: 2 }}>
+        {item.year}
+      </div>
+      <div style={{ minHeight: 64 }}>
+        <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 4, lineHeight: 1.4 }}>
+          {t(item.cs.title, item.en.title)}
+        </h3>
+        <p style={{ fontSize: 13, color: '#94a3b8', lineHeight: 1.6 }}>
+          {t(item.cs.body, item.en.body)}
+        </p>
+      </div>
+    </div>
+  )
 
   return (
     <section id="story" style={{ padding: '110px 0', background: '#0a1628' }}>
@@ -73,25 +101,31 @@ export default function Story() {
         <div className="story-layout">
           {/* Timeline */}
           <div>
-            {timeline.map((item, i) => (
-              <ScrollReveal key={i} delay={`d${(i % 3) + 1}` as 'd1'} style={{
-                display: 'grid', gridTemplateColumns: '70px 1fr',
-                gap: 20, padding: '24px 0',
-                borderBottom: '1px solid rgba(255,255,255,0.04)',
-              }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 22, color: '#10b981', paddingTop: 2 }}>
-                  {item.year}
-                </div>
-                <div style={{ minHeight: 64 }}>
-                  <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 4, lineHeight: 1.4 }}>
-                    {t(item.cs.title, item.en.title)}
-                  </h3>
-                  <p style={{ fontSize: 13, color: '#94a3b8', lineHeight: 1.6 }}>
-                    {t(item.cs.body, item.en.body)}
-                  </p>
-                </div>
+            {visibleItems.map((item, i) => (
+              <ScrollReveal key={item.year} delay={`d${(i % 3) + 1}` as 'd1'}>
+                {itemContent(item)}
               </ScrollReveal>
             ))}
+
+            {/* Expandable hidden items */}
+            <div style={{
+              maxHeight: expanded ? '2400px' : '0',
+              overflow: 'hidden',
+              transition: 'max-height 0.5s ease-out',
+            }}>
+              {hiddenItems.map((item) => (
+                <div key={item.year}>{itemContent(item)}</div>
+              ))}
+            </div>
+
+            <div style={{ paddingTop: 20 }}>
+              <button
+                onClick={() => setExpanded(!expanded)}
+                className="story-expand-btn"
+              >
+                {expanded ? t('Skrýt ↑', 'Hide ↑') : t('Celý příběh ↓', 'Full story ↓')}
+              </button>
+            </div>
           </div>
 
           {/* Visual: photos + quote */}
@@ -150,6 +184,22 @@ export default function Story() {
           gap: 20px;
           position: sticky;
           top: 120px;
+        }
+        .story-expand-btn {
+          padding: 10px 24px;
+          background: none;
+          border: 1px solid rgba(16,185,129,0.3);
+          color: #10b981;
+          font-family: var(--font-body);
+          font-size: 13px;
+          font-weight: 700;
+          cursor: pointer;
+          letter-spacing: 0.5px;
+          transition: all 0.2s;
+        }
+        .story-expand-btn:hover {
+          border-color: #10b981;
+          background: rgba(16,185,129,0.06);
         }
         @media (max-width: 1024px) {
           .story-layout { grid-template-columns: 1fr; gap: 48px; }
