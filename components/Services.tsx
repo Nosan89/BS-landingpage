@@ -83,50 +83,57 @@ export default function Services() {
                 <div
                   className="svc-card"
                   style={{
-                    padding: 36, background: '#0f1f38',
+                    padding: '24px 28px',
+                    background: '#0f1f38',
                     border: '1px solid rgba(255,255,255,0.04)',
-                    position: 'relative', overflow: 'hidden',
-                    transition: 'all 0.4s',
+                    boxShadow: isOpen ? 'inset 0 2px 0 #10b981' : 'inset 0 2px 0 transparent',
+                    transition: 'box-shadow 0.3s, border-color 0.3s, transform 0.4s',
                   }}
                 >
-                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: '#10b981', transform: 'scaleX(0)', transformOrigin: 'left', transition: 'transform 0.4s' }} className="svc-top-bar" />
-                  <div style={{
-                    width: 44, height: 44, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    background: 'var(--emerald-glow)', border: '1px solid rgba(16,185,129,0.1)',
-                    marginBottom: 20, fontSize: 20,
-                  }}>
-                    {svc.icon}
+                  {/* Icon + Title on one row */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10 }}>
+                    <div style={{
+                      width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      background: 'var(--emerald-glow)', border: '1px solid rgba(16,185,129,0.1)',
+                      flexShrink: 0, fontSize: 18,
+                    }}>
+                      {svc.icon}
+                    </div>
+                    <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 22, letterSpacing: 1, lineHeight: 1 }}>
+                      {t(svc.titleCs, svc.titleEn)}
+                    </h3>
                   </div>
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 24, letterSpacing: 1, marginBottom: 10 }}>
-                    {t(svc.titleCs, svc.titleEn)}
-                  </h3>
-                  <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>
+
+                  {/* Preview: first sentence */}
+                  <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.6, marginBottom: 6 }}>
                     {t(previewCs, previewEn)}
                   </p>
 
-                  {/* Collapsible content */}
+                  {/* Collapsible: rest of body + tags */}
                   <div style={{
                     maxHeight: isOpen ? '400px' : '0',
                     overflow: 'hidden',
                     transition: 'max-height 0.35s ease-out',
                   }}>
-                    {(restCs || restEn) && (
-                      <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7, marginTop: 4 }}>
-                        {t(restCs, restEn)}
-                      </p>
-                    )}
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 16 }}>
-                      {svc.tags.map((tag, ti) => (
-                        <span key={ti} style={{
-                          padding: '3px 10px',
-                          background: 'rgba(16,185,129,0.06)',
-                          border: '1px solid rgba(16,185,129,0.1)',
-                          fontSize: 10, fontWeight: 700, letterSpacing: '1.2px',
-                          textTransform: 'uppercase', color: '#10b981',
-                        }}>
-                          {tag.includes(' / ') ? t(tag.split(' / ')[0], tag.split(' / ')[1]) : tag}
-                        </span>
-                      ))}
+                    <div style={{ paddingTop: 2 }}>
+                      {(restCs || restEn) && (
+                        <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.6, marginBottom: 8 }}>
+                          {t(restCs, restEn)}
+                        </p>
+                      )}
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 4 }}>
+                        {svc.tags.map((tag, ti) => (
+                          <span key={ti} style={{
+                            padding: '3px 10px',
+                            background: 'rgba(16,185,129,0.06)',
+                            border: '1px solid rgba(16,185,129,0.1)',
+                            fontSize: 10, fontWeight: 700, letterSpacing: '1.2px',
+                            textTransform: 'uppercase', color: '#10b981',
+                          }}>
+                            {tag.includes(' / ') ? t(tag.split(' / ')[0], tag.split(' / ')[1]) : tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
@@ -151,10 +158,10 @@ export default function Services() {
           margin-top: 60px;
         }
         .svc-card:hover { border-color: rgba(16,185,129,0.12) !important; transform: translateY(-3px); }
-        .svc-card:hover .svc-top-bar { transform: scaleX(1) !important; }
         .svc-more-btn {
-          margin-top: 16px;
-          padding: 6px 0;
+          display: block;
+          margin-top: 8px;
+          padding: 4px 0;
           background: none;
           border: none;
           color: #10b981;
