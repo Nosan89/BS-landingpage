@@ -38,6 +38,7 @@ const items = [
       { cs: 'Readiness survey', en: 'Readiness survey' },
     ],
     img: '/images/training_app.jpg',
+    comingSoon: true,
   },
   {
     titleCs: 'HEALTH PROTOKOLY', titleEn: 'HEALTH PROTOCOLS',
@@ -101,32 +102,72 @@ export default function Platform() {
         {/* Tab content */}
         <div key={activeTab} className="plat-content animate-fadeIn">
           <div className="plat-item">
-            <div>
-              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 1, marginBottom: 10 }}>
-                {t(active.titleCs, active.titleEn)}
-              </h3>
-              <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>{t(active.bodyCs, active.bodyEn)}</p>
-              <ul style={{ listStyle: 'none', marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {active.features.map((f, fi) => (
-                  <li key={fi} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 13, color: '#cbd5e1' }}>
+            {active.comingSoon ? (
+              <>
+                <div>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 1, marginBottom: 10 }}>
+                    {t(active.titleCs, active.titleEn)}
+                  </h3>
+                  <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>
+                    {t('Aplikace je ve vývoji.', 'The app is in development.')}
+                  </p>
+                  <div style={{ marginTop: 20 }}>
                     <span style={{
-                      width: 18, height: 18, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      background: 'var(--emerald-glow)', flexShrink: 0, color: '#10b981',
+                      display: 'inline-block',
+                      padding: '6px 14px',
+                      border: '1px solid rgba(16,185,129,0.4)',
+                      color: '#10b981',
+                      fontSize: 13,
+                      fontFamily: 'var(--font-display)',
+                      letterSpacing: 1,
                     }}>
-                      <CheckIcon />
+                      {t('Spuštění brzy', 'Coming soon')}
                     </span>
-                    {t(f.cs, f.en)}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <div className="phone-frame">
-                <div className="phone-frame-inner">
-                  <Image src={active.img} alt={t(active.titleCs, active.titleEn)} width={320} height={640} style={{ width: '100%', display: 'block' }} />
+                  </div>
                 </div>
-              </div>
-            </div>
+                <div>
+                  <div className="phone-frame">
+                    <div className="phone-frame-inner phone-frame-placeholder">
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: 12 }}>
+                        <span style={{ fontSize: 36 }}>⚙️</span>
+                        <span style={{ fontSize: 12, color: '#475569', fontFamily: 'var(--font-display)', letterSpacing: 1 }}>
+                          {t('VE VÝVOJI', 'IN DEVELOPMENT')}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 1, marginBottom: 10 }}>
+                    {t(active.titleCs, active.titleEn)}
+                  </h3>
+                  <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>{t(active.bodyCs, active.bodyEn)}</p>
+                  <ul style={{ listStyle: 'none', marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {active.features.map((f, fi) => (
+                      <li key={fi} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 13, color: '#cbd5e1' }}>
+                        <span style={{
+                          width: 18, height: 18, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                          background: 'var(--emerald-glow)', flexShrink: 0, color: '#10b981',
+                        }}>
+                          <CheckIcon />
+                        </span>
+                        {t(f.cs, f.en)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="phone-frame">
+                    <div className="phone-frame-inner">
+                      <Image src={active.img} alt={t(active.titleCs, active.titleEn)} width={320} height={640} style={{ width: '100%', display: 'block' }} />
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -169,6 +210,10 @@ export default function Platform() {
           grid-template-columns: 1fr 1.1fr;
           gap: 48px;
           align-items: center;
+        }
+        .phone-frame-placeholder {
+          background: #060e1a;
+          min-height: 400px;
         }
         @media (max-width: 1024px) {
           .plat-item {

@@ -32,7 +32,7 @@ components/
   Problem.tsx             — 3 statistiky
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy
   Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta)
-  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu
+  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder místo screenshotu
   Process.tsx             — 4 kroky
   FAQ.tsx                 — accordion
   FinalCTA.tsx            — závěrečné CTA
