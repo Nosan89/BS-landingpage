@@ -40,6 +40,9 @@ export default function FinalCTA() {
               </svg>
             </button>
           </div>
+          <p style={{ fontSize: 14, color: '#94a3b8', opacity: 0.6, marginTop: 16, textAlign: 'center' }}>
+            {t('Spolupráce probíhá na 3měsíční bázi. Kapacita je omezená.', 'Engagements run on a 3-month basis. Capacity is limited.')}
+          </p>
         </ScrollReveal>
       </div>
     </section>

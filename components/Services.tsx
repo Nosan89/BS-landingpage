@@ -68,6 +68,12 @@ export default function Services() {
               'No templates. Your protocol is built on your data, your body, your life.'
             )}
           </p>
+          <p style={{ fontSize: 16, color: '#94a3b8', lineHeight: 1.7, maxWidth: 560, marginTop: 12 }}>
+            {t(
+              'Žádné 12týdenní výzvy. Stavíme návyky, které fungují i po ukončení spolupráce.',
+              'No 12-week challenges. We build habits that last beyond our time together.'
+            )}
+          </p>
         </ScrollReveal>
 
         <div className="services-grid">

@@ -30,14 +30,14 @@ components/
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)
   Story.tsx               — timeline (9 položek) + fotky + citát; první 3 (1993, 2014, 2018) viditelné, zbytek za tlačítkem "Celý příběh ↓" (useState expand)
   Problem.tsx             — 3 statistiky
-  Comparison.tsx          — tabulka Běžný trenér vs BioStrategy
+  Comparison.tsx          — tabulka Běžný trenér vs BioStrategy; 9 řádků vč. "Dlouhodobá udržitelnost" (Intenzivní program, pak konec vs. Návyky, které fungují i po skončení spolupráce)
   Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; tmavé navy-deep pozadí
-  Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta)
+  Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta); podtitulek obsahuje 2 odstavce — druhý: "Žádné 12týdenní výzvy. Stavíme návyky, které fungují i po ukončení spolupráce."
   Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VLASTNÍ TECH. ŽÁDNÉ KOMPROMISY." / "OUR OWN TECH. NO COMPROMISES."
   InlineCTA.tsx           — inline pruh s CTA tlačítkem (props: cs, en text); průhledné pozadí, emerald horní linka (opacity 20%); otvírá QuestionnaireModal přes useModal(); použit po Comparison, Testimonials a Platform; tlačítko má identický styl jako Navbar CTA (font-body, 13px, weight 800, uppercase)
   Process.tsx             — 4 kroky; nadpis: "JAK SPOLUPRÁCE VYPADÁ" / "HOW IT WORKS"
   FAQ.tsx                 — accordion
-  FinalCTA.tsx            — závěrečné CTA
+  FinalCTA.tsx            — závěrečné CTA; pod tlačítkem scarcity řádek: "Spolupráce probíhá na 3měsíční bázi. Kapacita je omezená." (text-sm, opacity 60%, mt-4)
   Footer.tsx              — copyright, links, email
   ScrollReveal.tsx        — IntersectionObserver wrapper
 

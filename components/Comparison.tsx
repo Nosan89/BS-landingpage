@@ -16,6 +16,7 @@ const rows: Array<{
   { cs: 'Health protokoly', en: 'Health protocols', bad: null, good: null },
   { cs: 'Longevity přístup', en: 'Longevity approach', bad: null, good: null, badCs: 'Někdy', badEn: 'Sometimes', goodCs: 'Vždy', goodEn: 'Always' },
   { cs: 'Data-driven rozhodování', en: 'Data-driven decisions', bad: null, good: null, badCs: 'Pocity', badEn: 'Feelings', goodCs: 'Čísla', goodEn: 'Numbers' },
+  { cs: 'Dlouhodobá udržitelnost', en: 'Long-term sustainability', bad: null, good: null, badCs: 'Intenzivní program, pak konec', badEn: "Intense program, then it's over", goodCs: 'Návyky, které fungují i po skončení spolupráce', goodEn: 'Habits that work beyond the engagement' },
 ]
 
 export default function Comparison() {
