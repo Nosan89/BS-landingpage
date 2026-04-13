@@ -29,7 +29,6 @@ function BannerContent({ spots }: { spots: string }) {
       right: 0,
       zIndex: 50,
       background: '#0f1f38',
-      borderBottom: '1px solid #10b981',
       color: '#ffffff',
       textAlign: 'center',
       padding: '8px 24px',
@@ -39,9 +38,9 @@ function BannerContent({ spots }: { spots: string }) {
       transition: 'top 0.3s',
     }}>
       {lang === 'cs' ? (
-        <>Aktuálně přijímám nové klienty. Prvních <strong style={{ color: '#34d399' }}>{spots} míst</strong> za <strong style={{ color: '#34d399' }}>pilotní cenu</strong>.</>
+        <>Aktuálně přijímám nové klienty. Zbývá <strong style={{ color: '#34d399' }}>{spots} míst</strong> za pilotní cenu.</>
       ) : (
-        <>Now accepting new clients. First <strong style={{ color: '#34d399' }}>{spots} spots</strong> at <strong style={{ color: '#34d399' }}>pilot pricing</strong>.</>
+        <>Now accepting new clients. <strong style={{ color: '#34d399' }}>{spots} spots</strong> left at pilot pricing.</>
       )}
     </div>
   )
