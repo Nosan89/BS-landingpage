@@ -29,8 +29,8 @@ const services = [
   {
     icon: '🏋️',
     titleCs: 'TRÉNINK & PROTOKOLY', titleEn: 'TRAINING & PROTOCOLS',
-    bodyCs: 'Individuální plán ve vlastní appce. Síla, mobilita, kondice + health protokoly pro spánek, stres, suplementaci a dalších.',
-    bodyEn: 'Custom plan in our own app. Strength, mobility, conditioning + health protocols for sleep, stress, supplementation, and more.',
+    bodyCs: 'Individuální tréninkový plán přes TrainHeroic. Síla, mobilita, kondice + health protokoly pro spánek, stres, suplementaci a dalších.',
+    bodyEn: 'Individual training plan via TrainHeroic. Strength, mobility, conditioning + health protocols for sleep, stress, supplementation, and more.',
     tags: ['Síla / Strength', 'Spánek / Sleep', 'Suplementace / Supplements'],
   },
 ]
