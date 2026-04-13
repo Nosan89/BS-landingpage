@@ -1,0 +1,33 @@
+'use client'
+
+import { useLang } from './LangContext'
+
+const SPOTS = process.env.NEXT_PUBLIC_PILOT_SPOTS_REMAINING
+
+export default function AnnouncementBanner() {
+  if (!SPOTS) return null
+
+  return <BannerContent spots={SPOTS} />
+}
+
+function BannerContent({ spots }: { spots: string }) {
+  const { lang } = useLang()
+
+  return (
+    <div style={{
+      background: '#10b981',
+      color: '#060e1a',
+      textAlign: 'center',
+      padding: '8px 24px',
+      fontFamily: 'var(--font-body)',
+      fontSize: 14,
+      fontWeight: 500,
+    }}>
+      {lang === 'cs' ? (
+        <>Prvních 10 klientů vstupuje za <strong>pilotních podmínek</strong>. Zbývá <strong>{spots} míst</strong>.</>
+      ) : (
+        <>First 10 clients join under <strong>pilot conditions</strong>. <strong>{spots} spots</strong> remaining.</>
+      )}
+    </div>
+  )
+}

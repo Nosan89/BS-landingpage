@@ -35,6 +35,12 @@ const faqs = [
     aCs: 'Dvě olympiády se sluchovým handicapem. Fyzioterapie. Certifikovaný S&C coach. A vlastní platforma od nuly. Nekopíruji - tvořím.',
     aEn: "Two Olympics with a hearing disability. Physiotherapy degree. Certified S&C coach. Custom platform from scratch. I don't copy - I create.",
   },
+  {
+    qCs: 'Nechceš rovnou skočit do plného systému?',
+    qEn: 'Not ready to jump into the full system?',
+    aCs: 'Začni osobním tréninkem. Trénujeme osobně, bez technologie, bez závazku. Napiš mi na jakub.nosek@biostrategy.co',
+    aEn: 'Start with personal training. We train in person, no technology, no commitment. Write me at jakub.nosek@biostrategy.co',
+  },
 ]
 
 export default function FAQ() {

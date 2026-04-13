@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import AnnouncementBanner from '@/components/AnnouncementBanner'
 import QuestionnaireModal from '@/components/QuestionnaireModal'
 import Hero from '@/components/Hero'
 import Credentials from '@/components/Credentials'
@@ -20,6 +21,7 @@ export default function Home() {
     <>
       <QuestionnaireModal />
       <Navbar />
+      <AnnouncementBanner />
       <main>
         <Hero />
         <div className="section-divider" />

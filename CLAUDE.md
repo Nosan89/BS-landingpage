@@ -15,7 +15,7 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 ```
 app/
   layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider + ModalProvider
-  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → [InlineCTA] → FAQ → FinalCTA
+  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → [InlineCTA] → FAQ → FinalCTA; AnnouncementBanner je vložen těsně za Navbar
   globals.css             — Tailwind v4 import, CSS custom properties, animace
   api/questionnaire/route.ts — POST endpoint, odesílá email přes Resend
   podminky/page.tsx       — obchodní podmínky (placeholder)
@@ -25,6 +25,7 @@ components/
   LangContext.tsx         — CZ/EN context + useLang hook
   ModalContext.tsx        — modal open/close context + useModal hook
   QuestionnaireModal.tsx  — 4-krokový kvalifikační dotazník (modal overlay)
+  AnnouncementBanner.tsx  — emerald proužek těsně pod Navbar; zobrazuje se jen pokud je nastavena ENV var NEXT_PUBLIC_PILOT_SPOTS_REMAINING; zobrazuje počet zbývajících pilotních míst; CZ/EN přes useLang()
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)
@@ -36,7 +37,7 @@ components/
   Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VLASTNÍ TECH. ŽÁDNÉ KOMPROMISY." / "OUR OWN TECH. NO COMPROMISES."
   InlineCTA.tsx           — inline pruh s CTA tlačítkem (props: cs, en text); průhledné pozadí, emerald horní linka (opacity 20%); otvírá QuestionnaireModal přes useModal(); použit po Comparison, Testimonials a Platform; tlačítko má identický styl jako Navbar CTA (font-body, 13px, weight 800, uppercase)
   Process.tsx             — 4 kroky; nadpis: "JAK SPOLUPRÁCE VYPADÁ" / "HOW IT WORKS"
-  FAQ.tsx                 — accordion
+  FAQ.tsx                 — accordion; 6 otázek vč. "Nechceš rovnou skočit do plného systému?" (osobní trénink bez závazku)
   FinalCTA.tsx            — závěrečné CTA; pod tlačítkem scarcity řádek: "Spolupráce probíhá na 3měsíční bázi. Kapacita je omezená." (text-sm, opacity 60%, mt-4)
   Footer.tsx              — copyright, links, email
   ScrollReveal.tsx        — IntersectionObserver wrapper
@@ -106,6 +107,7 @@ Otevírá se po kliknutí na všechna CTA tlačítka (Hero, Navbar, FinalCTA).
 - **Email:** odesílá se přes Resend na jakub.nosek@biostrategy.co
 - **API route:** `POST /api/questionnaire`
 - **ENV var:** `RESEND_API_KEY` — nastavit v Vercel dashboardu (Settings → Environment Variables)
+- **ENV var:** `NEXT_PUBLIC_PILOT_SPOTS_REMAINING` — aktuální počet pilotních míst (např. `9`); pokud není nastavena, AnnouncementBanner se nezobrazí
 - **Sender:** `noreply@biostrategy.co` — doména biostrategy.co musí být ověřena v Resend dashboardu
 - CZ/EN plně podporováno
 
