@@ -25,7 +25,7 @@ components/
   LangContext.tsx         — CZ/EN context + useLang hook
   ModalContext.tsx        — modal open/close context + useModal hook
   QuestionnaireModal.tsx  — 4-krokový kvalifikační dotazník (modal overlay)
-  AnnouncementBanner.tsx  — subtilní proužek těsně pod Navbar; position: fixed, top reaguje na scroll (68px bez scrollu / 56px po scrollu, odpovídá výšce Navbaru), z-index: 50 (pod Navbarem); pozadí navy-light (#0f1f38), bílý text, emerald border-bottom a bold důraz v emerald (#34d399); zobrazuje se jen pokud je nastavena ENV var NEXT_PUBLIC_PILOT_SPOTS_REMAINING; CZ/EN přes useLang()
+  AnnouncementBanner.tsx  — subtilní proužek těsně pod Navbar; position: fixed, top reaguje na scroll (68px bez scrollu / 56px po scrollu, odpovídá výšce Navbaru), z-index: 50 (pod Navbarem); pozadí navy-light (#0f1f38), bílý text, emerald border-bottom a bold důraz v emerald (#34d399); zobrazuje se jen pokud je nastavena ENV var NEXT_PUBLIC_PILOT_SPOTS_REMAINING; CZ/EN přes useLang(); text CS: "Aktuálně přijímám nové klienty. Prvních {spots} míst za pilotní cenu." / EN: "Now accepting new clients. First {spots} spots at pilot pricing."
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)

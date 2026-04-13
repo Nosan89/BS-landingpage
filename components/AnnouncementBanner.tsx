@@ -39,9 +39,9 @@ function BannerContent({ spots }: { spots: string }) {
       transition: 'top 0.3s',
     }}>
       {lang === 'cs' ? (
-        <>Prvních 10 klientů vstupuje za <strong style={{ color: '#34d399' }}>pilotních podmínek</strong>. Zbývá <strong style={{ color: '#34d399' }}>{spots} míst</strong>.</>
+        <>Aktuálně přijímám nové klienty. Prvních <strong style={{ color: '#34d399' }}>{spots} míst</strong> za <strong style={{ color: '#34d399' }}>pilotní cenu</strong>.</>
       ) : (
-        <>First 10 clients join under <strong style={{ color: '#34d399' }}>pilot conditions</strong>. <strong style={{ color: '#34d399' }}>{spots} spots</strong> remaining.</>
+        <>Now accepting new clients. First <strong style={{ color: '#34d399' }}>{spots} spots</strong> at <strong style={{ color: '#34d399' }}>pilot pricing</strong>.</>
       )}
     </div>
   )
