@@ -28,21 +28,23 @@ export default function InlineCTA({ cs, en }: InlineCTAProps) {
       }}>
         <button
           onClick={openModal}
+          className="nav-cta-btn"
           style={{
-            background: '#10b981',
-            color: '#060e1a',
-            border: 'none',
-            padding: '14px 32px',
-            fontSize: '0.95rem',
-            fontFamily: 'var(--font-bebas)',
-            letterSpacing: '0.08em',
-            cursor: 'pointer',
-            borderRadius: 2,
-            transition: 'background 0.2s',
-            whiteSpace: 'nowrap',
+            padding: '10px 28px', background: '#10b981', color: '#060e1a',
+            fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 800,
+            letterSpacing: '0.5px', border: 'none', cursor: 'pointer', textTransform: 'uppercase',
+            transition: 'all 0.3s',
           }}
-          onMouseEnter={e => (e.currentTarget.style.background = '#34d399')}
-          onMouseLeave={e => (e.currentTarget.style.background = '#10b981')}
+          onMouseEnter={e => {
+            (e.currentTarget as HTMLElement).style.background = '#34d399'
+            ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)'
+            ;(e.currentTarget as HTMLElement).style.boxShadow = '0 8px 30px rgba(16,185,129,0.3)'
+          }}
+          onMouseLeave={e => {
+            (e.currentTarget as HTMLElement).style.background = '#10b981'
+            ;(e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
+            ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
+          }}
         >
           {t(cs, en)}
         </button>

@@ -8,58 +8,30 @@ import ScrollReveal from './ScrollReveal'
 const items = [
   {
     titleCs: 'COACH DASHBOARD', titleEn: 'COACH DASHBOARD',
-    bodyCs: 'Všechna tvoje data na jednom místě. Recovery, spánek, HRV, srdeční frekvence - synchronizované z Whoop nebo Oura.',
-    bodyEn: 'All your data in one place. Recovery, sleep, HRV, heart rate - synced from Whoop or Oura.',
-    features: [
-      { cs: 'Real-time sync z wearables', en: 'Real-time wearable sync' },
-      { cs: 'Semaforové color-coding', en: 'Traffic light color-coding' },
-      { cs: '14denní trendy', en: '14-day trends' },
-    ],
+    bodyCs: 'Tvá data sleduji já, ne ty. Každé ráno vidím tvé HRV, spánek a zátěž - a podle toho upravuji plán. Ty se soustředíš na práci.',
+    bodyEn: 'I track your data, not you. Every morning I see your HRV, sleep and load - and adjust the plan accordingly. You focus on work.',
     img: '/images/coach_triage.jpg',
   },
   {
     titleCs: 'KREVNÍ MARKERY', titleEn: 'BLOOD MARKERS',
-    bodyCs: 'AI parsování výsledků z laboratoře. Longevity color-coding - ne referenční rozsahy, ale optimální hodnoty.',
-    bodyEn: 'AI-powered lab result parsing. Longevity color-coding - not reference ranges, but optimal values.',
-    features: [
-      { cs: 'AI parsování PDF z Synlabu', en: 'AI parsing of Synlab PDFs' },
-      { cs: '4úrovňový longevity systém', en: '4-level longevity system' },
-      { cs: 'Historické srovnání', en: 'Historical comparison' },
-    ],
+    bodyCs: 'Víme přesně, co se děje uvnitř. Krevní markery odhalí, co žádná aplikace nezměří - a já z toho postavím konkrétní plán.',
+    bodyEn: 'We know exactly what\'s happening inside. Blood markers reveal what no app can measure - and I build a concrete plan from that.',
     img: '/images/blood_markers.jpg',
   },
   {
     titleCs: 'TRÉNINKOVÁ APPKA', titleEn: 'TRAINING APP',
-    bodyCs: 'BioStrategy Perform - session builder, video návody, logování setů, readiness tracking.',
-    bodyEn: 'BioStrategy Perform - session builder, video guides, set logging, readiness tracking.',
-    features: [
-      { cs: 'Exercise library s videi', en: 'Exercise library with videos' },
-      { cs: 'Block-based session builder', en: 'Block-based session builder' },
-      { cs: 'Readiness survey', en: 'Readiness survey' },
-    ],
+    bodyCs: 'Aplikace ve vývoji. Tréninkové plány zatím dodávám přes TrainHeroic - přehledně, s videi a logováním každého setu.',
+    bodyEn: 'App in development. Training plans are currently delivered via TrainHeroic - clear, with videos and set-by-set logging.',
     img: '/images/training_app.jpg',
     comingSoon: true,
   },
   {
     titleCs: 'HEALTH PROTOKOLY', titleEn: 'HEALTH PROTOCOLS',
-    bodyCs: 'Kognice, spánek, stres, suplementace - evidence-based protokoly s mechanismy, biomarkery a red flags.',
-    bodyEn: 'Cognition, sleep, stress, supplementation - evidence-based protocols with mechanisms, biomarkers, and red flags.',
-    features: [
-      { cs: 'Mechanismus + Protokol + Red Flagy', en: 'Mechanism + Protocol + Red Flags' },
-      { cs: 'Navázané na biomarkery', en: 'Linked to biomarkers' },
-      { cs: 'Klientský pohled', en: 'Client-facing view' },
-    ],
+    bodyCs: 'Spánek, suplementace, dýchání, cirkadiánní rytmus. Každý protokol je postavený na datech - ne na obecných doporučeních.',
+    bodyEn: 'Sleep, supplementation, breathing, circadian rhythm. Every protocol is built on data - not generic advice.',
     img: '/images/protocols.jpg',
   },
 ]
-
-function CheckIcon() {
-  return (
-    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
-  )
-}
 
 export default function Platform() {
   const { t } = useLang()
@@ -108,22 +80,7 @@ export default function Platform() {
                   <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 32, letterSpacing: 1, marginBottom: 10 }}>
                     {t(active.titleCs, active.titleEn)}
                   </h3>
-                  <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>
-                    {t('Aplikace je ve vývoji.', 'The app is in development.')}
-                  </p>
-                  <div style={{ marginTop: 20 }}>
-                    <span style={{
-                      display: 'inline-block',
-                      padding: '6px 14px',
-                      border: '1px solid rgba(16,185,129,0.4)',
-                      color: '#10b981',
-                      fontSize: 13,
-                      fontFamily: 'var(--font-display)',
-                      letterSpacing: 1,
-                    }}>
-                      {t('Spuštění brzy', 'Coming soon')}
-                    </span>
-                  </div>
+                  <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>{t(active.bodyCs, active.bodyEn)}</p>
                 </div>
                 <div>
                   <div className="phone-frame">
@@ -145,19 +102,6 @@ export default function Platform() {
                     {t(active.titleCs, active.titleEn)}
                   </h3>
                   <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7 }}>{t(active.bodyCs, active.bodyEn)}</p>
-                  <ul style={{ listStyle: 'none', marginTop: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {active.features.map((f, fi) => (
-                      <li key={fi} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 13, color: '#cbd5e1' }}>
-                        <span style={{
-                          width: 18, height: 18, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                          background: 'var(--emerald-glow)', flexShrink: 0, color: '#10b981',
-                        }}>
-                          <CheckIcon />
-                        </span>
-                        {t(f.cs, f.en)}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
                 <div>
                   <div className="phone-frame">

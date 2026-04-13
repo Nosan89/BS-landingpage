@@ -6,7 +6,7 @@ import ScrollReveal from './ScrollReveal'
 const testimonials = [
   {
     cs: {
-      quote: "Kombinuju trenink, studium informatiky a praci - hledal jsem neco vic nez jen tréninkový plan. BioStrategy mi propojila fyzicky vykon s biometrií. Nejde jen o to, co odtrenuju, ale jak regeneruju. HRV mi stabilne vzrostlo o 15 % a hluboka faze spanku je uplne jinde nez driv. Navic system krabickoveho stravovani mi setri hodiny tydne, ktere muzu dat do regenerace nebo prace. Pokud chces data-driven pristup k vlastnimu telu - tohle je ono.",
+      quote: "Kombinuju trénink, studium informatiky a práci - hledal jsem něco víc než jen tréninkový plán. BioStrategy mi propojila fyzický výkon s biometrií. Nejde jen o to, co odtrénuju, ale jak regeneruju. HRV mi stabilně vzrostlo o 15 % a hluboká fáze spánku je úplně jinde než dřív. Navíc systém krabičkového stravování mi šetří hodiny týdně, které můžu dát do regenerace nebo práce. Pokud chceš data-driven přístup k vlastnímu tělu - tohle je ono.",
       name: "Jan Žídek",
       role: "Profesionální sportovec, student VŠ"
     },
