@@ -31,6 +31,7 @@ components/
   Story.tsx               — timeline (9 položek) + fotky + citát; první 3 (1993, 2014, 2018) viditelné, zbytek za tlačítkem "Celý příběh ↓" (useState expand)
   Problem.tsx             — 3 statistiky
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy
+  Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; tmavé navy-deep pozadí
   Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta)
   Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder místo screenshotu
   Process.tsx             — 4 kroky

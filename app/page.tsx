@@ -5,6 +5,7 @@ import Credentials from '@/components/Credentials'
 import Story from '@/components/Story'
 import Problem from '@/components/Problem'
 import Comparison from '@/components/Comparison'
+import Testimonials from '@/components/Testimonials'
 import Services from '@/components/Services'
 import Platform from '@/components/Platform'
 import Process from '@/components/Process'
@@ -27,6 +28,8 @@ export default function Home() {
         <Problem />
         <div className="section-divider" />
         <Comparison />
+        <div className="section-divider" />
+        <Testimonials />
         <div className="section-divider" />
         <Services />
         <div className="section-divider" />
