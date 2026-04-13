@@ -46,7 +46,7 @@ export default function Platform() {
           <div className="section-label">{t('Platforma', 'Platform')}</div>
           <h2
             style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px,4.5vw,60px)', lineHeight: 1, letterSpacing: 1, marginBottom: 16 }}
-            dangerouslySetInnerHTML={{ __html: t('VLASTNÍ TECH.<br>NULOVÝ BULLSHIT.', 'CUSTOM TECH.<br>ZERO BULLSHIT.') }}
+            dangerouslySetInnerHTML={{ __html: t('VLASTNÍ TECH.<br>ŽÁDNÉ KOMPROMISY.', 'OUR OWN TECH.<br>NO COMPROMISES.') }}
           />
           <p style={{ fontSize: 16, color: '#94a3b8', lineHeight: 1.7, maxWidth: 560 }}>
             {t(

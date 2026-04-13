@@ -39,7 +39,7 @@ export default function Process() {
         <ScrollReveal>
           <div className="section-label" style={{ justifyContent: 'center' }}>{t('Jak to funguje', 'How It Works')}</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px,4.5vw,60px)', lineHeight: 1, letterSpacing: 1 }}>
-            {t('4 KROKY', '4 STEPS')}
+            {t('JAK SPOLUPRÁCE VYPADÁ', 'HOW IT WORKS')}
           </h2>
         </ScrollReveal>
 

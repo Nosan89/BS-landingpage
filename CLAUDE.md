@@ -33,9 +33,9 @@ components/
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy
   Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; tmavé navy-deep pozadí
   Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta)
-  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list)
+  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VLASTNÍ TECH. ŽÁDNÉ KOMPROMISY." / "OUR OWN TECH. NO COMPROMISES."
   InlineCTA.tsx           — inline pruh s CTA tlačítkem (props: cs, en text); průhledné pozadí, emerald horní linka (opacity 20%); otvírá QuestionnaireModal přes useModal(); použit po Comparison, Testimonials a Platform; tlačítko má identický styl jako Navbar CTA (font-body, 13px, weight 800, uppercase)
-  Process.tsx             — 4 kroky
+  Process.tsx             — 4 kroky; nadpis: "JAK SPOLUPRÁCE VYPADÁ" / "HOW IT WORKS"
   FAQ.tsx                 — accordion
   FinalCTA.tsx            — závěrečné CTA
   Footer.tsx              — copyright, links, email
