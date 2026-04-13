@@ -53,8 +53,8 @@ const timeline = [
   },
 ]
 
-// Indices of items always visible: 1993 (0), 2014 (2), 2018 (5)
-const VISIBLE_INDICES = new Set([0, 2, 5])
+// Indices of items always visible: 1993 (0), 2001 (1), 2014 (2)
+const VISIBLE_INDICES = new Set([0, 1, 2])
 
 export default function Story() {
   const { t } = useLang()

@@ -28,7 +28,7 @@ components/
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)
-  Story.tsx               — timeline (9 položek) + fotky + citát; první 3 (1993, 2014, 2018) viditelné, zbytek za tlačítkem "Celý příběh ↓" (useState expand)
+  Story.tsx               — timeline (9 položek) + fotky + citát; první 3 (1993, 2001, 2014) viditelné, zbytek (2015-2026) za tlačítkem "Celý příběh ↓" (useState expand)
   Problem.tsx             — 3 statistiky
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy; 9 řádků vč. "Dlouhodobá udržitelnost" (Intenzivní program, pak konec vs. Návyky, které fungují i po skončení spolupráce)
   Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; tmavé navy-deep pozadí
