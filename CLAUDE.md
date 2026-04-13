@@ -14,8 +14,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 
 ```
 app/
-  layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider + ModalProvider
-  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → [InlineCTA] → FAQ → FinalCTA; AnnouncementBanner je vložen těsně za Navbar
+  layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider + ModalProvider + Navbar + AnnouncementBanner; pořadí v body: <Navbar /> → <AnnouncementBanner /> → <main>{children}</main>
+  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → [InlineCTA] → FAQ → FinalCTA → Footer; Navbar a AnnouncementBanner jsou v layout.tsx, ne zde
   globals.css             — Tailwind v4 import, CSS custom properties, animace
   api/questionnaire/route.ts — POST endpoint, odesílá email přes Resend
   podminky/page.tsx       — obchodní podmínky (placeholder)
@@ -25,7 +25,7 @@ components/
   LangContext.tsx         — CZ/EN context + useLang hook
   ModalContext.tsx        — modal open/close context + useModal hook
   QuestionnaireModal.tsx  — 4-krokový kvalifikační dotazník (modal overlay)
-  AnnouncementBanner.tsx  — subtilní proužek těsně pod Navbar; pozadí navy-light (#0f1f38), bílý text, emerald border-bottom a bold důraz v emerald (#34d399); zobrazuje se jen pokud je nastavena ENV var NEXT_PUBLIC_PILOT_SPOTS_REMAINING; CZ/EN přes useLang()
+  AnnouncementBanner.tsx  — subtilní proužek těsně pod Navbar; position: fixed, top reaguje na scroll (68px bez scrollu / 56px po scrollu, odpovídá výšce Navbaru), z-index: 50 (pod Navbarem); pozadí navy-light (#0f1f38), bílý text, emerald border-bottom a bold důraz v emerald (#34d399); zobrazuje se jen pokud je nastavena ENV var NEXT_PUBLIC_PILOT_SPOTS_REMAINING; CZ/EN přes useLang()
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)

@@ -3,6 +3,8 @@ import { Bebas_Neue, Manrope } from 'next/font/google'
 import './globals.css'
 import { LangProvider } from '@/components/LangContext'
 import { ModalProvider } from '@/components/ModalContext'
+import Navbar from '@/components/Navbar'
+import AnnouncementBanner from '@/components/AnnouncementBanner'
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -27,7 +29,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="cs" className={`${bebasNeue.variable} ${manrope.variable}`}>
       <body>
-        <LangProvider><ModalProvider>{children}</ModalProvider></LangProvider>
+        <LangProvider>
+          <ModalProvider>
+            <Navbar />
+            <AnnouncementBanner />
+            <main>{children}</main>
+          </ModalProvider>
+        </LangProvider>
       </body>
     </html>
   )
