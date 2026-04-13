@@ -15,8 +15,9 @@ function BannerContent({ spots }: { spots: string }) {
 
   return (
     <div style={{
-      background: '#10b981',
-      color: '#060e1a',
+      background: '#0f1f38',
+      borderBottom: '1px solid #10b981',
+      color: '#ffffff',
       textAlign: 'center',
       padding: '8px 24px',
       fontFamily: 'var(--font-body)',
@@ -24,9 +25,9 @@ function BannerContent({ spots }: { spots: string }) {
       fontWeight: 500,
     }}>
       {lang === 'cs' ? (
-        <>Prvních 10 klientů vstupuje za <strong>pilotních podmínek</strong>. Zbývá <strong>{spots} míst</strong>.</>
+        <>Prvních 10 klientů vstupuje za <strong style={{ color: '#34d399' }}>pilotních podmínek</strong>. Zbývá <strong style={{ color: '#34d399' }}>{spots} míst</strong>.</>
       ) : (
-        <>First 10 clients join under <strong>pilot conditions</strong>. <strong>{spots} spots</strong> remaining.</>
+        <>First 10 clients join under <strong style={{ color: '#34d399' }}>pilot conditions</strong>. <strong style={{ color: '#34d399' }}>{spots} spots</strong> remaining.</>
       )}
     </div>
   )
