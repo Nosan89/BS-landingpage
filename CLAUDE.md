@@ -15,7 +15,7 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 ```
 app/
   layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider + ModalProvider
-  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → FAQ → FinalCTA
+  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → [InlineCTA] → FAQ → FinalCTA
   globals.css             — Tailwind v4 import, CSS custom properties, animace
   api/questionnaire/route.ts — POST endpoint, odesílá email přes Resend
   podminky/page.tsx       — obchodní podmínky (placeholder)

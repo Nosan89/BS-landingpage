@@ -43,10 +43,13 @@ export default function Home() {
         <div className="section-divider" />
         <Platform />
         <ScrollReveal>
-          <InlineCTA cs="Chci být řízen daty, ne dojmy →" en="I want to be driven by data, not guesses →" />
+          <InlineCTA cs="Chci systém, ne dohady →" en="I want a system, not guesswork →" />
         </ScrollReveal>
         <div className="section-divider" />
         <Process />
+        <ScrollReveal>
+          <InlineCTA cs="Chci začít prvním krokem →" en="I want to start with the first step →" />
+        </ScrollReveal>
         <div className="section-divider" />
         <FAQ />
         <div className="section-divider" />
