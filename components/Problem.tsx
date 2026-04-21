@@ -25,7 +25,7 @@ export default function Problem() {
   const { t } = useLang()
 
   return (
-    <section id="problem" style={{ padding: '110px 0', textAlign: 'center' }}>
+    <section id="problem" style={{ padding: '110px 0', textAlign: 'center', background: '#060e1a' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <ScrollReveal>
           <div className="section-label" style={{ justifyContent: 'center' }}>{t('Problém', 'The Problem')}</div>

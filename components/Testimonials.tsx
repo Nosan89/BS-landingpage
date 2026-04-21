@@ -39,7 +39,7 @@ export default function Testimonials() {
             return (
               <ScrollReveal key={i} delay={i === 0 ? undefined : 'd1'}>
                 <div style={{
-                  background: '#0a1628',
+                  background: '#0f1f38',
                   border: '1px solid rgba(255,255,255,0.06)',
                   borderRadius: 12,
                   padding: '40px 40px 36px',

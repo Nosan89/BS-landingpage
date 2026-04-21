@@ -34,7 +34,7 @@ export default function Process() {
   const { t } = useLang()
 
   return (
-    <section id="process" style={{ padding: '110px 0' }}>
+    <section id="process" style={{ padding: '110px 0', background: '#060e1a' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <ScrollReveal>
           <div className="section-label" style={{ justifyContent: 'center' }}>{t('Jak to funguje', 'How It Works')}</div>

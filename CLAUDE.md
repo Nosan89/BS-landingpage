@@ -32,7 +32,7 @@ components/
   Story.tsx               — timeline (9 položek) + fotky + citát; první 3 (1993, 2001, 2014) viditelné, zbytek (2015-2026) za tlačítkem "Celý příběh ↓" (useState expand)
   Problem.tsx             — 3 statistiky
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy; 9 řádků vč. "Dlouhodobá udržitelnost" (Intenzivní program, pak konec vs. Návyky, které fungují i po skončení spolupráce); indikátory: lucide X (červený sloupec) / Check (emerald sloupec)
-  Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; tmavé navy-deep pozadí
+  Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; navy-deep pozadí; karty navy-light
   Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta); ikony: Watch, Droplet, Scan, Dumbbell (lucide-react); podtitulek obsahuje 2 odstavce — druhý: "Žádné 12týdenní výzvy. Stavíme návyky, které fungují i po ukončení spolupráce."; karta "TRÉNINK & PROTOKOLY" — první věta: "Individuální tréninkový plán přes TrainHeroic." / "Individual training plan via TrainHeroic."
   Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder s lucide Settings ikonou místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VLASTNÍ TECH. ŽÁDNÉ KOMPROMISY." / "OUR OWN TECH. NO COMPROMISES."
   InlineCTA.tsx           — inline pruh s CTA tlačítkem (props: cs, en text); průhledné pozadí, emerald horní linka (opacity 20%); otvírá QuestionnaireModal přes useModal(); použit po Comparison, Testimonials a Platform; tlačítko má identický styl jako Navbar CTA (font-body, 13px, weight 800, uppercase)
@@ -48,10 +48,11 @@ public/
 
 ## Design
 
-- **Colors:** navy-deep `#060e1a`, navy `#0a1628`, emerald `#10b981`, emerald-bright `#34d399`
+- **Colors:** navy-deep `#060e1a`, navy `#0a1628`, navy-light `#0f1f38`, emerald `#10b981`, emerald-bright `#34d399`
 - **Fonts:** Bebas Neue (display), Manrope (body)
 - **Ikony:** `lucide-react` - stroke 1.5, emerald `#34d399` pro accent ikony, velikost 20px v kartách/credentials, 36px pro placeholder; žádné emoji jako UI elementy
-- **Tailwind v4:** konfigurace přes `@theme {}` v globals.css, žádný tailwind.config.js
+- **Tailwind v4:** konfigurace přes `@theme {}` v globals.css, žádný tailwind.config.js; `navy-light` je plně exportovaná jako utility (`bg-navy-light`)
+- **Alternující sekce:** vizuální rytmus střídá navy-deep a navy-light; tmavší (`#060e1a`): Hero, Problem, Testimonials, Services, Process, FinalCTA, Footer; světlejší (`#0f1f38`): Credentials, Comparison, Story, Platform, FAQ; InlineCTA má transparentní pozadí a dědí z kontextu automaticky; karty uvnitř světlejších sekcí používají navy-deep pro inverzní kontrast (viz Comparison tabulka, Story citát); přechody mezi sekcemi jsou ostré, bez gradientů
 - **Pomlčky:** v celém projektu se používá krátká pomlčka `-`, nikoliv em dash `—` ani en dash `–`
 
 ## Jazykový přepínač

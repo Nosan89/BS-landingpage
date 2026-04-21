@@ -14,6 +14,7 @@ export default function Hero() {
       style={{
         minHeight: '100vh', display: 'flex', alignItems: 'center',
         position: 'relative', padding: '140px 0 100px', overflow: 'hidden',
+        background: '#060e1a',
       }}
     >
       {/* Background glows */}

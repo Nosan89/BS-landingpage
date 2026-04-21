@@ -41,7 +41,7 @@ export default function Platform() {
   const active = items[activeTab]
 
   return (
-    <section id="platform" style={{ padding: '110px 0', background: '#0a1628' }}>
+    <section id="platform" style={{ padding: '110px 0', background: '#0f1f38' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <ScrollReveal>
           <div className="section-label">{t('Platforma', 'Platform')}</div>

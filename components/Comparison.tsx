@@ -35,7 +35,7 @@ export default function Comparison() {
   }
 
   return (
-    <section id="comparison" style={{ padding: '110px 0', background: '#0a1628', overflow: 'hidden' }}>
+    <section id="comparison" style={{ padding: '110px 0', background: '#0f1f38', overflow: 'hidden' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <ScrollReveal>
           <div className="section-label" style={{ justifyContent: 'center' }}>{t('Rozdíl', 'The Difference')}</div>
@@ -46,7 +46,7 @@ export default function Comparison() {
         </ScrollReveal>
 
         <ScrollReveal delay="d1">
-          <div className="comp-table" style={{ maxWidth: 900, margin: '60px auto 0', border: '1px solid rgba(255,255,255,0.06)', overflow: 'hidden' }}>
+          <div className="comp-table" style={{ maxWidth: 900, margin: '60px auto 0', border: '1px solid rgba(255,255,255,0.06)', overflow: 'hidden', background: '#060e1a' }}>
             {/* Header — display:contents so cells join the parent grid */}
             <div style={{ display: 'contents' }}>
               <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1 }} />

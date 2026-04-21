@@ -6,7 +6,7 @@ export default function Footer() {
   const { t } = useLang()
 
   return (
-    <footer style={{ padding: '36px 0', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+    <footer style={{ padding: '36px 0', borderTop: '1px solid rgba(255,255,255,0.04)', background: '#060e1a' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>
         <div style={{ fontSize: 12, color: '#475569' }}>
           © 2026 BioStrategy. {t('Všechna práva vyhrazena.', 'All rights reserved.')}

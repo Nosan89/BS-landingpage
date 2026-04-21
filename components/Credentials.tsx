@@ -18,6 +18,7 @@ export default function Credentials() {
       padding: '50px 0',
       borderTop: '1px solid rgba(255,255,255,0.04)',
       borderBottom: '1px solid rgba(255,255,255,0.04)',
+      background: '#0f1f38',
     }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <div className="cred-track">

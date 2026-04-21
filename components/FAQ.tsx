@@ -48,7 +48,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section id="faq" style={{ padding: '110px 0', background: '#0a1628' }}>
+    <section id="faq" style={{ padding: '110px 0', background: '#0f1f38' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <ScrollReveal>
           <div className="section-label" style={{ justifyContent: 'center' }}>{t('Otázky', 'FAQ')}</div>

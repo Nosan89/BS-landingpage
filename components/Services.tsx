@@ -55,7 +55,7 @@ export default function Services() {
   }
 
   return (
-    <section id="services" style={{ padding: '110px 0' }}>
+    <section id="services" style={{ padding: '110px 0', background: '#060e1a' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <ScrollReveal>
           <div className="section-label">{t('Co dostaneš', 'What You Get')}</div>

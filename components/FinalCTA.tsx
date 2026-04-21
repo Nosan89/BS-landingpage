@@ -9,7 +9,7 @@ export default function FinalCTA() {
   const { openModal } = useModal()
 
   return (
-    <section id="cta" style={{ padding: '130px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+    <section id="cta" style={{ padding: '130px 0', textAlign: 'center', position: 'relative', overflow: 'hidden', background: '#060e1a' }}>
       <div style={{
         position: 'absolute', top: '50%', left: '50%',
         transform: 'translate(-50%, -50%)',

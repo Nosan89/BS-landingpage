@@ -84,7 +84,7 @@ export default function Story() {
   )
 
   return (
-    <section id="story" style={{ padding: '110px 0', background: '#0a1628' }}>
+    <section id="story" style={{ padding: '110px 0', background: '#0f1f38' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <ScrollReveal>
           <div className="section-label">{t('Příběh', 'Story')}</div>
@@ -156,7 +156,7 @@ export default function Story() {
             </ScrollReveal>
 
             <ScrollReveal delay="d2" style={{
-              padding: 32, background: '#0f1f38', borderLeft: '3px solid #10b981',
+              padding: 32, background: '#060e1a', borderLeft: '3px solid #10b981',
             }}>
               <p style={{ fontSize: 18, fontStyle: 'italic', lineHeight: 1.7, color: '#cbd5e1' }}>
                 {t(
