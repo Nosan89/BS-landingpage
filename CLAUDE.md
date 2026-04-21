@@ -28,13 +28,13 @@ components/
   AnnouncementBanner.tsx  — subtilní proužek těsně pod Navbar; position: fixed, top reaguje na scroll (68px bez scrollu / 56px po scrollu, odpovídá výšce Navbaru), z-index: 50 (pod Navbarem); pozadí navy-light (#0f1f38), bílý text, emerald border-bottom a bold důraz v emerald (#34d399); zobrazuje se jen pokud je nastavena ENV var NEXT_PUBLIC_PILOT_SPOTS_REMAINING; CZ/EN přes useLang(); text CS: "Aktuálně přijímám nové klienty. Zbývá {spots} míst za pilotní cenu." / EN: "Now accepting new clients. {spots} spots left at pilot pricing."; bez border; {spots} zvýrazněno emerald + bold
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
   Hero.tsx                — headline, CTA, profile photo, floating cards
-  Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma)
+  Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma); ikony: Trophy, Stethoscope, Dumbbell, LayoutDashboard (lucide-react)
   Story.tsx               — timeline (9 položek) + fotky + citát; první 3 (1993, 2001, 2014) viditelné, zbytek (2015-2026) za tlačítkem "Celý příběh ↓" (useState expand)
   Problem.tsx             — 3 statistiky
-  Comparison.tsx          — tabulka Běžný trenér vs BioStrategy; 9 řádků vč. "Dlouhodobá udržitelnost" (Intenzivní program, pak konec vs. Návyky, které fungují i po skončení spolupráce)
+  Comparison.tsx          — tabulka Běžný trenér vs BioStrategy; 9 řádků vč. "Dlouhodobá udržitelnost" (Intenzivní program, pak konec vs. Návyky, které fungují i po skončení spolupráce); indikátory: lucide X (červený sloupec) / Check (emerald sloupec)
   Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; tmavé navy-deep pozadí
-  Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta); podtitulek obsahuje 2 odstavce — druhý: "Žádné 12týdenní výzvy. Stavíme návyky, které fungují i po ukončení spolupráce."; karta "TRÉNINK & PROTOKOLY" — první věta: "Individuální tréninkový plán přes TrainHeroic." / "Individual training plan via TrainHeroic."
-  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VLASTNÍ TECH. ŽÁDNÉ KOMPROMISY." / "OUR OWN TECH. NO COMPROMISES."
+  Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta); ikony: Watch, Droplet, Scan, Dumbbell (lucide-react); podtitulek obsahuje 2 odstavce — druhý: "Žádné 12týdenní výzvy. Stavíme návyky, které fungují i po ukončení spolupráce."; karta "TRÉNINK & PROTOKOLY" — první věta: "Individuální tréninkový plán přes TrainHeroic." / "Individual training plan via TrainHeroic."
+  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder s lucide Settings ikonou místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VLASTNÍ TECH. ŽÁDNÉ KOMPROMISY." / "OUR OWN TECH. NO COMPROMISES."
   InlineCTA.tsx           — inline pruh s CTA tlačítkem (props: cs, en text); průhledné pozadí, emerald horní linka (opacity 20%); otvírá QuestionnaireModal přes useModal(); použit po Comparison, Testimonials a Platform; tlačítko má identický styl jako Navbar CTA (font-body, 13px, weight 800, uppercase)
   Process.tsx             — 4 kroky; nadpis: "JAK SPOLUPRÁCE VYPADÁ" / "HOW IT WORKS"
   FAQ.tsx                 — accordion; 6 otázek vč. "Nechceš rovnou skočit do plného systému?" (osobní trénink bez závazku)
@@ -50,6 +50,7 @@ public/
 
 - **Colors:** navy-deep `#060e1a`, navy `#0a1628`, emerald `#10b981`, emerald-bright `#34d399`
 - **Fonts:** Bebas Neue (display), Manrope (body)
+- **Ikony:** `lucide-react` - stroke 1.5, emerald `#34d399` pro accent ikony, velikost 20px v kartách/credentials, 36px pro placeholder; žádné emoji jako UI elementy
 - **Tailwind v4:** konfigurace přes `@theme {}` v globals.css, žádný tailwind.config.js
 - **Pomlčky:** v celém projektu se používá krátká pomlčka `-`, nikoliv em dash `—` ani en dash `–`
 

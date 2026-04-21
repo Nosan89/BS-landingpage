@@ -1,5 +1,6 @@
 'use client'
 
+import { X, Check } from 'lucide-react'
 import { useLang } from './LangContext'
 import ScrollReveal from './ScrollReveal'
 
@@ -28,9 +29,9 @@ export default function Comparison() {
       return <span>{t(textKey.cs, textKey.en ?? textKey.cs)}</span>
     }
     if (side === 'bad') {
-      return <span className="comp-x">✕</span>
+      return <span className="comp-x"><X size={16} strokeWidth={2} aria-hidden="true" /></span>
     }
-    return <span className="comp-check">✓</span>
+    return <span className="comp-check"><Check size={16} strokeWidth={2} aria-hidden="true" /></span>
   }
 
   return (

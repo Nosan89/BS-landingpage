@@ -1,33 +1,34 @@
 'use client'
 
 import { useState } from 'react'
+import { Watch, Droplet, Scan, Dumbbell } from 'lucide-react'
 import { useLang } from './LangContext'
 import ScrollReveal from './ScrollReveal'
 
 const services = [
   {
-    icon: '⌚',
+    icon: Watch,
     titleCs: 'WEARABLE MONITORING', titleEn: 'WEARABLE MONITORING',
     bodyCs: 'Oura nebo Whoop - kontinuální sledování spánku, HRV, recovery, zátěže. Vidím tvá data v reálném čase.',
     bodyEn: 'Oura or Whoop - continuous sleep, HRV, recovery, strain tracking. I see your data in real-time.',
     tags: ['Oura', 'Whoop', 'HRV', 'Sleep'],
   },
   {
-    icon: '🩸',
+    icon: Droplet,
     titleCs: 'KREVNÍ MARKERY', titleEn: 'BLOOD BIOMARKERS',
     bodyCs: 'Kompletní panel přes Synlab. Lipidy, hormony, záněty, vitamíny - ne to, co ti dá obvoďák.',
     bodyEn: "Complete panel via Synlab. Lipids, hormones, inflammation, vitamins - not your GP's basic panel.",
     tags: ['ApoB', 'Lipidy / Lipids', 'Hormony / Hormones'],
   },
   {
-    icon: '📊',
+    icon: Scan,
     titleCs: 'CGM & DEXA', titleEn: 'CGM & DEXA',
     bodyCs: 'Dexcom G7 na 10 dní - reakce tvého těla na jídlo. DEXA scan - přesné složení těla.',
     bodyEn: 'Dexcom G7 for 10 days - how your body responds to food. DEXA scan - precise body composition.',
     tags: ['Glukóza / Glucose', 'DEXA', 'Složení těla / Body Comp'],
   },
   {
-    icon: '🏋️',
+    icon: Dumbbell,
     titleCs: 'TRÉNINK & PROTOKOLY', titleEn: 'TRAINING & PROTOCOLS',
     bodyCs: 'Individuální tréninkový plán přes TrainHeroic. Síla, mobilita, kondice + health protokoly pro spánek, stres, suplementaci a dalších.',
     bodyEn: 'Individual training plan via TrainHeroic. Strength, mobility, conditioning + health protocols for sleep, stress, supplementation, and more.',
@@ -83,6 +84,7 @@ export default function Services() {
             const restCs = getRestSentences(svc.bodyCs)
             const restEn = getRestSentences(svc.bodyEn)
             const isOpen = expanded[i]
+            const Icon = svc.icon
 
             return (
               <ScrollReveal key={i} delay={`d${(i % 2) + 1}` as 'd1'}>
@@ -103,7 +105,7 @@ export default function Services() {
                       background: 'var(--emerald-glow)', border: '1px solid rgba(16,185,129,0.1)',
                       flexShrink: 0, fontSize: 18,
                     }}>
-                      {svc.icon}
+                      <Icon size={20} strokeWidth={1.5} aria-hidden="true" color="#34d399" />
                     </div>
                     <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 22, letterSpacing: 1, lineHeight: 1 }}>
                       {t(svc.titleCs, svc.titleEn)}

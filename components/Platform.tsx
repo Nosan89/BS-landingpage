@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { Settings } from 'lucide-react'
 import { useLang } from './LangContext'
 import ScrollReveal from './ScrollReveal'
 
@@ -86,7 +87,7 @@ export default function Platform() {
                   <div className="phone-frame">
                     <div className="phone-frame-inner phone-frame-placeholder">
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: 12 }}>
-                        <span style={{ fontSize: 36 }}>⚙️</span>
+                        <Settings size={36} strokeWidth={1.5} aria-hidden="true" color="#475569" />
                         <span style={{ fontSize: 12, color: '#475569', fontFamily: 'var(--font-display)', letterSpacing: 1 }}>
                           {t('VE VÝVOJI', 'IN DEVELOPMENT')}
                         </span>
