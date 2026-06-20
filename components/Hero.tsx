@@ -62,7 +62,7 @@ export default function Hero() {
               fontSize: 19, lineHeight: 1.8, color: '#cbd5e1', fontWeight: 500,
               maxWidth: 520, marginBottom: 44, animationDelay: '0.15s',
             }} dangerouslySetInnerHTML={{ __html: t(
-              'BioStrategy je osobní <strong style="color:#ffffff;font-weight:700">operating system</strong> pro lidi, kteří nesou vysokou odpovědnost. Krevní biomarkery, wearable data, pohyb, spánek a výživa - propojené do jednoho praktického plánu, vedeného člověkem.',
+              'BioStrategy je osobní <strong style="color:#ffffff;font-weight:700">operační systém</strong> pro lidi, kteří nesou vysokou odpovědnost. Krevní biomarkery, wearable data, pohyb, spánek a výživa - propojené do jednoho praktického plánu, vedeného člověkem.',
               'BioStrategy is a personal <strong style="color:#ffffff;font-weight:700">operating system</strong> for people who carry high responsibility. Blood biomarkers, wearable data, movement, sleep and nutrition - connected into one practical plan, led by a human.'
             )}} />
 

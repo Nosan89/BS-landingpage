@@ -92,8 +92,8 @@ export default function Story() {
             dangerouslySetInnerHTML={{ __html: t('OD MENINGITIDY<br>K OLYMPIÁDĚ - A ZPÁTKY', 'FROM MENINGITIS<br>TO THE OLYMPICS - AND BACK') }} />
           <p style={{ fontSize: 16, color: '#94a3b8', lineHeight: 1.7, maxWidth: 560 }}>
             {t(
-              'Nejsem teoretik. Ve třech letech jsem překonal meningitidu. Pak přišly dvě olympiády v bobsleu a coachování izraelského týmu na jejich první olympijskou kvalifikaci. Vím, jak tělo funguje pod tlakem - a co se stane, když ho ignoruješ příliš dlouho. BioStrategy jsem postavil proto, aby lidé mimo vrcholový sport měli přístup ke stejně strukturovanému vedení - bez extrémů, bez dogmat, bez hádání.',
-              "I'm not a theorist. At age three, I recovered from meningitis. Then came two Olympic Games in bobsled and coaching the Israeli team to their first Olympic qualification. I know how the body performs under pressure - and what happens when you ignore it for too long. I built BioStrategy so that people outside elite sport could access the same structured coaching - without extremes, without dogmas, without guesswork."
+              'Nejsem teoretik. Ve třech letech jsem překonal meningitidu. Pak přišly dvě olympiády v jízdě na bobech a koučování izraelského týmu v jejich snaze dostat se na ZOH 26 do Cortiny. Vím, jak tělo funguje pod tlakem - a co se stane, když ho ignoruješ příliš dlouho. BioStrategy jsem postavil proto, aby lidé nejen z vrcholového sportu měli přístup ke stejně strukturovanému vedení - bez extrémů, bez dogmat, bez hádání.',
+              "I'm not a theorist. At the age of three, I survived meningitis. Then came two Olympic Games in bobsled and coaching the Israeli team in their push to qualify for the 2026 Winter Olympics in Cortina. I know how the body performs under pressure - and what happens when you ignore it for too long. I built BioStrategy so that people not only from elite sport could access the same structured coaching - without extremes, without dogmas, without guesswork."
             )}
           </p>
         </ScrollReveal>

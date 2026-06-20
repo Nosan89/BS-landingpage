@@ -5,6 +5,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 > **Copy přepis (positioning):** Landing page copy přepsána dle nového positioningu: operating system framing, dvě fáze spolupráce (iniciační fáze + performance partnerství), Founding Client Program, statistiky bez konkrétních čísel.
 >
 > **Update:** Sekce "Jak to funguje" přepsána na 5 karet (Realita / Data / Systém / Vedení / Partnerství). Přidána nová sekce "Zní to povědomě?" (5 objection karet) za třísloupcovou sekci.
+>
+> **Opraveno:** hero subheadline CS (operační systém), text sekce osobního příběhu (meningitida ve 3 letech, ZOH 26 Cortina), sekce Kompletní systém (odstraněna zmínka 12 týdnů).
 
 ## Tech Stack
 
