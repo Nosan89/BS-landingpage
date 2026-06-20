@@ -80,7 +80,7 @@ export default function SoundFamiliar() {
           height: 100%;
           background: #0f1f38;
           border: 1px solid rgba(255,255,255,0.04);
-          border-left: 2px solid rgba(52,211,153,0.4);
+          border-left: 2px solid rgba(232,190,106,0.4);
         }
         @media (max-width: 900px) {
           .sf-grid { grid-template-columns: 1fr; }
