@@ -6,27 +6,15 @@ import ScrollReveal from './ScrollReveal'
 const steps = [
   {
     num: '01',
-    titleCs: 'KVALIFIKACE', titleEn: 'QUALIFY',
-    bodyCs: 'Krátký dotazník. Zjistím, jestli jsme match - nepracuji s každým.',
-    bodyEn: "Short questionnaire. I'll see if we're a match - I don't work with everyone.",
+    titleCs: 'INICIAČNÍ FÁZE', titleEn: 'FOUNDATION PHASE',
+    bodyCs: 'Diagnostika a nastavení systému probíhají v prvních dvou týdnech - krevní testy, wearable baseline, pohybový screening, výživová anamnéza, spánek, stres. Z toho vznikne tvůj individuální plán. Pak ho spolu testujeme, ladíme a ověřujeme, co na tebe reálně funguje.',
+    bodyEn: 'Diagnostics and system setup happen in the first two weeks - blood tests, wearable baseline, movement screening, nutrition anamnesis, sleep, stress. From this, your individual plan is built. Then we test, refine and verify what actually works for you.',
   },
   {
     num: '02',
-    titleCs: 'KONZULTACE', titleEn: 'CONSULT',
-    bodyCs: '30min call. Tvá situace, cíle, a jestli ti reálně můžu pomoct.',
-    bodyEn: '30min call. Your situation, goals, and whether I can actually help.',
-  },
-  {
-    num: '03',
-    titleCs: 'BASELINE', titleEn: 'BASELINE',
-    bodyCs: '14 dní sběru dat. Wearable, krev, CGM, DEXA. Zjistím, kde jsi.',
-    bodyEn: '14 days of data. Wearable, blood, CGM, DEXA. Finding your starting point.',
-  },
-  {
-    num: '04',
-    titleCs: 'OPTIMALIZACE', titleEn: 'OPTIMIZE',
-    bodyCs: 'Trénink, spánek, strava, suplementace - vše řízené daty.',
-    bodyEn: 'Training, sleep, nutrition, supplementation - all data-driven.',
+    titleCs: 'PERFORMANCE PARTNERSTVÍ', titleEn: 'PERFORMANCE PARTNERSHIP',
+    bodyCs: 'Dlouhodobé vedení s průběžnou interpretací dat a úpravami podle aktuálního života. Cestování, stres, sezóna, zranění - systém se přizpůsobuje. Žádný pokus-omyl.',
+    bodyEn: 'Long-term coaching with ongoing data interpretation and adjustments to your current life. Travel, stress, seasons, injuries - the system adapts. No more trial and error.',
   },
 ]
 
@@ -39,7 +27,7 @@ export default function Process() {
         <ScrollReveal>
           <div className="section-label" style={{ justifyContent: 'center' }}>{t('Jak to funguje', 'How It Works')}</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px,4.5vw,60px)', lineHeight: 1, letterSpacing: 1 }}>
-            {t('JAK SPOLUPRÁCE VYPADÁ', 'HOW IT WORKS')}
+            {t('JAK TO FUNGUJE', 'HOW IT WORKS')}
           </h2>
         </ScrollReveal>
 
@@ -65,7 +53,7 @@ export default function Process() {
       <style>{`
         .process-steps {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 0;
           margin-top: 60px;
           border: 1px solid rgba(255,255,255,0.04);
@@ -75,12 +63,6 @@ export default function Process() {
           border-right: 1px solid rgba(255,255,255,0.04);
         }
         .proc-step:last-child { border-right: none; }
-        @media (max-width: 1024px) {
-          .process-steps { grid-template-columns: repeat(2, 1fr); }
-          .proc-step:nth-child(2) { border-right: none; }
-          .proc-step:nth-child(1),
-          .proc-step:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,0.04); }
-        }
         @media (max-width: 640px) {
           .process-steps { grid-template-columns: 1fr; }
           .proc-step { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.04); }

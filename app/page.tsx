@@ -1,5 +1,6 @@
 import QuestionnaireModal from '@/components/QuestionnaireModal'
 import Hero from '@/components/Hero'
+import Pillars from '@/components/Pillars'
 import Credentials from '@/components/Credentials'
 import Problem from '@/components/Problem'
 import Comparison from '@/components/Comparison'
@@ -10,6 +11,7 @@ import Platform from '@/components/Platform'
 import Process from '@/components/Process'
 import FAQ from '@/components/FAQ'
 import FinalCTA from '@/components/FinalCTA'
+import FoundingClient from '@/components/FoundingClient'
 import Footer from '@/components/Footer'
 import InlineCTA from '@/components/InlineCTA'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -19,6 +21,8 @@ export default function Home() {
     <>
       <QuestionnaireModal />
       <Hero />
+      <div className="section-divider" />
+      <Pillars />
       <div className="section-divider" />
       <Credentials />
       <div className="section-divider" />
@@ -47,6 +51,8 @@ export default function Home() {
       <ScrollReveal>
         <InlineCTA cs="Chci začít prvním krokem →" en="I want to start with the first step →" />
       </ScrollReveal>
+      <div className="section-divider" />
+      <FoundingClient />
       <div className="section-divider" />
       <FAQ />
       <div className="section-divider" />

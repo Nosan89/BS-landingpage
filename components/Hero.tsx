@@ -62,13 +62,13 @@ export default function Hero() {
               fontSize: 19, lineHeight: 1.8, color: '#cbd5e1', fontWeight: 500,
               maxWidth: 520, marginBottom: 44, animationDelay: '0.15s',
             }} dangerouslySetInnerHTML={{ __html: t(
-              'Prémiový health coaching od <strong style="color:#ffffff;font-weight:700">dvounásobného olympionika</strong>, postavený na datech, ne dojmech. Wearables, krevní markery, CGM, DEXA - a trenér, který to celé řídí. Pro ty, kteří odmítají obětovat zdraví za byznys.',
-              'Premium health coaching from a <strong style="color:#ffffff;font-weight:700">two-time olympian</strong>, built on data, not guesswork. Wearables, blood markers, CGM, DEXA - and a coach who runs it all. For those who refuse to sacrifice health for business.'
+              'BioStrategy je osobní <strong style="color:#ffffff;font-weight:700">operating system</strong> pro lidi, kteří nesou vysokou odpovědnost. Krevní biomarkery, wearable data, pohyb, spánek a výživa - propojené do jednoho praktického plánu, vedeného člověkem.',
+              'BioStrategy is a personal <strong style="color:#ffffff;font-weight:700">operating system</strong> for people who carry high responsibility. Blood biomarkers, wearable data, movement, sleep and nutrition - connected into one practical plan, led by a human.'
             )}} />
 
             <div className="animate-fadeUp" style={{ display: 'flex', gap: 16, flexWrap: 'wrap', animationDelay: '0.3s' }}>
               <button onClick={openModal} className="btn-primary">
-                <span>{t('ZAČÍT KVALIFIKAČNÍM DOTAZNÍKEM →', 'START WITH THE QUALIFICATION QUESTIONNAIRE →')}</span>
+                <span>{t('DOMLUVIT ÚVODNÍ KONZULTACI →', 'BOOK AN INTRO CALL →')}</span>
               </button>
               <a href="#story" className="btn-ghost">
                 {t('Můj příběh', 'My Story')}

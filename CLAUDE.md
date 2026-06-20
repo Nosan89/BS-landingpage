@@ -2,6 +2,8 @@
 
 Landing page pro biostrategy.co — health coaching Jakuba Noska.
 
+> **Copy přepis (positioning):** Landing page copy přepsána dle nového positioningu: operating system framing, dvě fáze spolupráce (iniciační fáze + performance partnerství), Founding Client Program, statistiky bez konkrétních čísel.
+
 ## Tech Stack
 
 - **Next.js 16** (App Router, Turbopack)
@@ -15,7 +17,7 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 ```
 app/
   layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider + ModalProvider + Navbar + AnnouncementBanner; pořadí v body: <Navbar /> → <AnnouncementBanner /> → <main>{children}</main>
-  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → [InlineCTA] → FAQ → FinalCTA → Footer; Navbar a AnnouncementBanner jsou v layout.tsx, ne zde
+  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Pillars → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → [InlineCTA] → FoundingClient → FAQ → FinalCTA → Footer; Navbar a AnnouncementBanner jsou v layout.tsx, ne zde
   globals.css             — Tailwind v4 import, CSS custom properties, animace
   api/questionnaire/route.ts — POST endpoint, odesílá email přes Resend
   podminky/page.tsx       — obchodní podmínky (placeholder)
@@ -27,17 +29,19 @@ components/
   QuestionnaireModal.tsx  — 4-krokový kvalifikační dotazník (modal overlay)
   AnnouncementBanner.tsx  — subtilní proužek těsně pod Navbar; position: fixed, top reaguje na scroll (68px bez scrollu / 56px po scrollu, odpovídá výšce Navbaru), z-index: 50 (pod Navbarem); pozadí navy-light (#0f1f38), bílý text, emerald border-bottom a bold důraz v emerald (#34d399); zobrazuje se jen pokud je nastavena ENV var NEXT_PUBLIC_PILOT_SPOTS_REMAINING; CZ/EN přes useLang(); text CS: "Aktuálně přijímám nové klienty. Zbývá {spots} míst za pilotní cenu." / EN: "Now accepting new clients. {spots} spots left at pilot pricing."; bez border; {spots} zvýrazněno emerald + bold
   Navbar.tsx              — fixed nav, scroll effect, lang switch, CTA
-  Hero.tsx                — headline, CTA, profile photo, floating cards
+  Hero.tsx                — headline (operating system positioning), CTA, profile photo, floating cards
+  Pillars.tsx             — 3 sloupce pod hero ("Data nestačí" / "Tělo jako infrastruktura" / "Lidský dohled"); navy-light pozadí, karty navy-deep; čistě copy + ScrollReveal, žádné ikony
   Credentials.tsx         — 4 credentials (olympionik, fyzio, S&C, platforma); ikony: Trophy, Stethoscope, Dumbbell, LayoutDashboard (lucide-react)
   Story.tsx               — timeline (9 položek) + fotky + citát; první 3 (1993, 2001, 2014) viditelné, zbytek (2015-2026) za tlačítkem "Celý příběh ↓" (useState expand)
-  Problem.tsx             — 3 statistiky
+  Problem.tsx             — nadpis "Úspěch bez zdraví je časovaná bomba" + text (bez konkrétních čísel; původní statistiky 72%/2×/35 odstraněny)
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy; 9 řádků vč. "Dlouhodobá udržitelnost" (Intenzivní program, pak konec vs. Návyky, které fungují i po skončení spolupráce); indikátory: lucide X (červený sloupec) / Check (emerald sloupec)
   Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; navy-deep pozadí; karty navy-light
   Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta); ikony: Watch, Droplet, Scan, Dumbbell (lucide-react); podtitulek obsahuje 2 odstavce — druhý: "Žádné 12týdenní výzvy. Stavíme návyky, které fungují i po ukončení spolupráce."; karta "TRÉNINK & PROTOKOLY" — první věta: "Individuální tréninkový plán přes TrainHeroic." / "Individual training plan via TrainHeroic."
-  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder s lucide Settings ikonou místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VLASTNÍ TECH. ŽÁDNÉ KOMPROMISY." / "OUR OWN TECH. NO COMPROMISES."
+  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder s lucide Settings ikonou místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VŠECHNA TVOJE DATA NA JEDNOM MÍSTĚ." / "ALL YOUR DATA IN ONE PLACE."; caption pod obsahem: "Klient nevidí chaos. Vidí priority."
   InlineCTA.tsx           — inline pruh s CTA tlačítkem (props: cs, en text); průhledné pozadí, emerald horní linka (opacity 20%); otvírá QuestionnaireModal přes useModal(); použit po Comparison, Testimonials a Platform; tlačítko má identický styl jako Navbar CTA (font-body, 13px, weight 800, uppercase)
-  Process.tsx             — 4 kroky; nadpis: "JAK SPOLUPRÁCE VYPADÁ" / "HOW IT WORKS"
+  Process.tsx             — 2 fáze (01 Iniciační fáze / 02 Performance partnerství); grid repeat(2,1fr); nadpis: "JAK TO FUNGUJE" / "HOW IT WORKS"
   FAQ.tsx                 — accordion; 6 otázek vč. "Nechceš rovnou skočit do plného systému?" (osobní trénink bez závazku)
+  FoundingClient.tsx      — sekce "FOUNDING CLIENT PROGRAM" před FAQ (navy-deep); nadpis + text o zvýhodněných podmínkách pro první klienty + CTA "Domluvit úvodní konzultaci" (otvírá QuestionnaireModal přes useModal)
   FinalCTA.tsx            — závěrečné CTA; pod tlačítkem scarcity řádek: "Spolupráce probíhá na 3měsíční bázi. Kapacita je omezená." (text-sm, opacity 60%, mt-4)
   Footer.tsx              — copyright, links, email
   ScrollReveal.tsx        — IntersectionObserver wrapper
@@ -115,6 +119,7 @@ Otevírá se po kliknutí na všechna CTA tlačítka (Hero, Navbar, FinalCTA).
 
 ### CTA texty (aktuální stav)
 - **Navbar:** `Vyplnit dotazník` / `Fill in the Questionnaire`
-- **Hero (primární tlačítko):** `ZAČÍT KVALIFIKAČNÍM DOTAZNÍKEM →` / `START WITH THE QUALIFICATION QUESTIONNAIRE →`
+- **Hero (primární tlačítko):** `DOMLUVIT ÚVODNÍ KONZULTACI →` / `BOOK AN INTRO CALL →`
+- **FoundingClient (primární tlačítko):** `Domluvit úvodní konzultaci` / `Book an intro call`
 - **FinalCTA (primární tlačítko):** `Vyplnit dotazník` / `Take the Questionnaire` — sekundární tlačítko (konzultace) odstraněno
 - **FinalCTA (nadpis):** `TVŮJ BYZNYS JEDE NA DATA.<br>ZAČNI TAK ŘÍDIT I SVÉ TĚLO.` / `YOUR BUSINESS RUNS ON DATA.<br>START RUNNING YOUR BODY THE SAME WAY.`

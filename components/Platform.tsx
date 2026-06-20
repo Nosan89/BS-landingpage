@@ -47,12 +47,12 @@ export default function Platform() {
           <div className="section-label">{t('Platforma', 'Platform')}</div>
           <h2
             style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px,4.5vw,60px)', lineHeight: 1, letterSpacing: 1, marginBottom: 16 }}
-            dangerouslySetInnerHTML={{ __html: t('VLASTNÍ TECH.<br>ŽÁDNÉ KOMPROMISY.', 'OUR OWN TECH.<br>NO COMPROMISES.') }}
+            dangerouslySetInnerHTML={{ __html: t('VŠECHNA TVOJE DATA<br>NA JEDNOM MÍSTĚ.', 'ALL YOUR DATA<br>IN ONE PLACE.') }}
           />
           <p style={{ fontSize: 16, color: '#94a3b8', lineHeight: 1.7, maxWidth: 560 }}>
             {t(
-              'Žádná třetí strana. BioStrategy je platforma, kterou jsem postavil sám - přesně pro tohle.',
-              'No third parties. BioStrategy is a platform I built myself - specifically for this.'
+              'Whoop, Oura, krevní testy, složení těla - coach dashboard interpretuje signály za tebe a říká, co je priorita. Klient nevidí chaos. Vidí rozhodnutí.',
+              "Whoop, Oura, blood tests, body composition - the coach dashboard interprets the signals for you and shows what matters. The client doesn't see chaos. They see decisions."
             )}
           </p>
         </ScrollReveal>
@@ -115,6 +115,10 @@ export default function Platform() {
             )}
           </div>
         </div>
+
+        <p style={{ marginTop: 32, fontSize: 13, color: '#64748b', textAlign: 'center', fontStyle: 'italic' }}>
+          {t('Klient nevidí chaos. Vidí priority.', "The client doesn't see chaos. They see priorities.")}
+        </p>
       </div>
 
       <style>{`

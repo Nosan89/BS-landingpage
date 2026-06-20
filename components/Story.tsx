@@ -89,11 +89,11 @@ export default function Story() {
         <ScrollReveal>
           <div className="section-label">{t('Příběh', 'Story')}</div>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(36px,4.5vw,60px)', lineHeight: 1, letterSpacing: 1, marginBottom: 16 }}
-            dangerouslySetInnerHTML={{ __html: t('OD MENINGITIDY<br>K OLYMPIÁDĚ', 'FROM MENINGITIS<br>TO THE OLYMPICS') }} />
+            dangerouslySetInnerHTML={{ __html: t('OD MENINGITIDY<br>K OLYMPIÁDĚ - A ZPÁTKY', 'FROM MENINGITIS<br>TO THE OLYMPICS - AND BACK') }} />
           <p style={{ fontSize: 16, color: '#94a3b8', lineHeight: 1.7, maxWidth: 560 }}>
             {t(
-              'Když mi ve třech letech vzala meningitida sluch, nikdo nečekal, že se dostanu na olympiádu. Dvakrát.',
-              "When meningitis took my hearing at age three, nobody expected I'd make it to the Olympics. Twice."
+              'Nejsem teoretik. Ve třech letech jsem překonal meningitidu. Pak přišly dvě olympiády v bobsleu a coachování izraelského týmu na jejich první olympijskou kvalifikaci. Vím, jak tělo funguje pod tlakem - a co se stane, když ho ignoruješ příliš dlouho. BioStrategy jsem postavil proto, aby lidé mimo vrcholový sport měli přístup ke stejně strukturovanému vedení - bez extrémů, bez dogmat, bez hádání.',
+              "I'm not a theorist. At age three, I recovered from meningitis. Then came two Olympic Games in bobsled and coaching the Israeli team to their first Olympic qualification. I know how the body performs under pressure - and what happens when you ignore it for too long. I built BioStrategy so that people outside elite sport could access the same structured coaching - without extremes, without dogmas, without guesswork."
             )}
           </p>
         </ScrollReveal>
