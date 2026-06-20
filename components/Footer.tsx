@@ -13,17 +13,17 @@ export default function Footer() {
         </div>
         <div style={{ display: 'flex', gap: 20 }}>
           <a href="/ochrana-soukromi" style={{ fontSize: 12, color: '#64748b', textDecoration: 'none', transition: 'color 0.2s' }}
-            onMouseEnter={e => (e.currentTarget.style.color = '#10b981')}
+            onMouseEnter={e => (e.currentTarget.style.color = '#d4a84b')}
             onMouseLeave={e => (e.currentTarget.style.color = '#64748b')}>
             {t('Ochrana soukromí', 'Privacy')}
           </a>
           <a href="/podminky" style={{ fontSize: 12, color: '#64748b', textDecoration: 'none', transition: 'color 0.2s' }}
-            onMouseEnter={e => (e.currentTarget.style.color = '#10b981')}
+            onMouseEnter={e => (e.currentTarget.style.color = '#d4a84b')}
             onMouseLeave={e => (e.currentTarget.style.color = '#64748b')}>
             {t('Podmínky', 'Terms')}
           </a>
           <a href="mailto:jakub.nosek@biostrategy.co" style={{ fontSize: 12, color: '#64748b', textDecoration: 'none', transition: 'color 0.2s' }}
-            onMouseEnter={e => (e.currentTarget.style.color = '#10b981')}
+            onMouseEnter={e => (e.currentTarget.style.color = '#d4a84b')}
             onMouseLeave={e => (e.currentTarget.style.color = '#64748b')}>
             jakub.nosek@biostrategy.co
           </a>

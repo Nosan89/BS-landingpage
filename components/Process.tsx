@@ -65,7 +65,7 @@ export default function Process() {
           {steps.map((step, i) => (
             <ScrollReveal key={i} delay={`d${(i % 3) + 1}` as 'd1'}>
               <div className="proc-step">
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 56, color: '#10b981', opacity: 0.15, lineHeight: 1, marginBottom: 16 }}>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: 56, color: '#d4a84b', opacity: 0.15, lineHeight: 1, marginBottom: 16 }}>
                   {step.num}
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 22, letterSpacing: 1, marginBottom: 12 }}>
@@ -74,7 +74,7 @@ export default function Process() {
                 <p style={{ fontSize: 14, color: '#94a3b8', lineHeight: 1.7, marginBottom: 16 }}>
                   {t(step.bodyCs, step.bodyEn)}
                 </p>
-                <p style={{ fontSize: 14, color: '#34d399', fontWeight: 600, lineHeight: 1.6 }}>
+                <p style={{ fontSize: 14, color: '#e8be6a', fontWeight: 600, lineHeight: 1.6 }}>
                   {t(step.highlightCs, step.highlightEn)}
                 </p>
               </div>

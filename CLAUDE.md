@@ -9,6 +9,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 > **Opraveno:** hero subheadline CS (operační systém), text sekce osobního příběhu (meningitida ve 3 letech, ZOH 26 Cortina), sekce Kompletní systém (odstraněna zmínka 12 týdnů).
 >
 > **Update:** Sekce "Jak to funguje" přesunuta za osobní příběh a před Kompletní systém. Opraven překlep "efective" → "effective".
+>
+> **Barvy:** Barvy landing page přehozeny z emerald (zelená) na navy/gold paletu konzistentní s BioStrategy platformou. Accent: #d4a84b. Emerald tokeny i hardcoded hex nahrazeny napříč globals.css i komponentami (#10b981→#d4a84b, #34d399→#e8be6a, #059669→#b8923a, glow rgba(16,185,129,…)→rgba(212,168,75,…)); CSS tokeny přejmenovány `--color-emerald*`→`--color-gold*` a `--emerald-glow*`→`--gold-glow*`. Navy a sémantické barvy (danger #ef4444) beze změny.
 
 ## Tech Stack
 
@@ -59,9 +61,9 @@ public/
 
 ## Design
 
-- **Colors:** navy-deep `#060e1a`, navy `#0a1628`, navy-light `#0f1f38`, emerald `#10b981`, emerald-bright `#34d399`
+- **Colors:** navy-deep `#060e1a`, navy `#0a1628`, navy-light `#0f1f38`, gold `#d4a84b` (accent), gold-bright `#e8be6a` (hover/jasný accent), gold-dark `#b8923a`; danger `#ef4444`. (Pozn.: dřívější emerald paleta nahrazena gold - viz **Barvy** výše. V textu níže může "emerald" označovat dnešní gold accent.)
 - **Fonts:** Bebas Neue (display), Manrope (body)
-- **Ikony:** `lucide-react` - stroke 1.5, emerald `#34d399` pro accent ikony, velikost 20px v kartách/credentials, 36px pro placeholder; žádné emoji jako UI elementy
+- **Ikony:** `lucide-react` - stroke 1.5, gold `#e8be6a` pro accent ikony, velikost 20px v kartách/credentials, 36px pro placeholder; žádné emoji jako UI elementy
 - **Tailwind v4:** konfigurace přes `@theme {}` v globals.css, žádný tailwind.config.js; `navy-light` je plně exportovaná jako utility (`bg-navy-light`)
 - **Alternující sekce:** vizuální rytmus střídá navy-deep a navy-light; tmavší (`#060e1a`): Hero, Problem, Testimonials, Services, Process, FinalCTA, Footer; světlejší (`#0f1f38`): Credentials, Comparison, Story, Platform, FAQ; InlineCTA má transparentní pozadí a dědí z kontextu automaticky; karty uvnitř světlejších sekcí používají navy-deep pro inverzní kontrast (viz Comparison tabulka, Story citát); přechody mezi sekcemi jsou ostré, bez gradientů
 - **Pomlčky:** v celém projektu se používá krátká pomlčka `-`, nikoliv em dash `—` ani en dash `–`

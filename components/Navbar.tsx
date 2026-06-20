@@ -24,7 +24,7 @@ export default function Navbar() {
         background: scrolled ? 'rgba(6,14,26,0.92)' : 'transparent',
         backdropFilter: scrolled ? 'blur(24px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(24px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(16,185,129,0.08)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(212,168,75,0.08)' : 'none',
         transition: 'all 0.3s',
       }}
     >
@@ -46,7 +46,7 @@ export default function Navbar() {
                   fontFamily: 'var(--font-body)', fontSize: 12, fontWeight: 700,
                   letterSpacing: '1.5px', textTransform: 'uppercase',
                   color: lang === l ? '#ffffff' : '#64748b',
-                  background: lang === l ? '#059669' : 'transparent',
+                  background: lang === l ? '#b8923a' : 'transparent',
                   border: 'none', cursor: 'pointer', transition: 'all 0.2s',
                 }}
               >
@@ -58,18 +58,18 @@ export default function Navbar() {
             onClick={openModal}
             className="nav-cta-btn"
             style={{
-              padding: '10px 28px', background: '#10b981', color: '#060e1a',
+              padding: '10px 28px', background: '#d4a84b', color: '#060e1a',
               fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 800,
               letterSpacing: '0.5px', border: 'none', cursor: 'pointer', textTransform: 'uppercase',
               transition: 'all 0.3s',
             }}
             onMouseEnter={e => {
-              (e.currentTarget as HTMLElement).style.background = '#34d399'
+              (e.currentTarget as HTMLElement).style.background = '#e8be6a'
               ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)'
-              ;(e.currentTarget as HTMLElement).style.boxShadow = '0 8px 30px rgba(16,185,129,0.3)'
+              ;(e.currentTarget as HTMLElement).style.boxShadow = '0 8px 30px rgba(212,168,75,0.3)'
             }}
             onMouseLeave={e => {
-              (e.currentTarget as HTMLElement).style.background = '#10b981'
+              (e.currentTarget as HTMLElement).style.background = '#d4a84b'
               ;(e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
               ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
             }}

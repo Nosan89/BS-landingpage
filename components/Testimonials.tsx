@@ -50,7 +50,7 @@ export default function Testimonials() {
                     fontFamily: 'Georgia, serif',
                     fontSize: 96,
                     lineHeight: 0.8,
-                    color: '#10b981',
+                    color: '#d4a84b',
                     opacity: 0.35,
                     position: 'absolute',
                     top: 28,
@@ -76,7 +76,7 @@ export default function Testimonials() {
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 0.5, color: '#f1f5f9' }}>
                       {data.name}
                     </div>
-                    <div style={{ fontSize: 13, color: '#10b981', marginTop: 4 }}>
+                    <div style={{ fontSize: 13, color: '#d4a84b', marginTop: 4 }}>
                       {data.role}
                     </div>
                   </div>

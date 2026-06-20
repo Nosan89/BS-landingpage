@@ -29,10 +29,10 @@ export default function Credentials() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '8px 0' }}>
                   <div style={{
                     width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    background: 'var(--emerald-glow)', border: '1px solid rgba(16,185,129,0.1)',
+                    background: 'var(--gold-glow)', border: '1px solid rgba(212,168,75,0.1)',
                     fontSize: 18, flexShrink: 0,
                   }}>
-                    <Icon size={20} strokeWidth={1.5} aria-hidden="true" color="#34d399" />
+                    <Icon size={20} strokeWidth={1.5} aria-hidden="true" color="#e8be6a" />
                   </div>
                   <div>
                     <div style={{ fontSize: 14, fontWeight: 700, lineHeight: 1.3 }}>{t(c.cs, c.en)}</div>

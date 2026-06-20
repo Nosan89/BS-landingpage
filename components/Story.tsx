@@ -69,7 +69,7 @@ export default function Story() {
       gap: 20, padding: '24px 0',
       borderBottom: '1px solid rgba(255,255,255,0.04)',
     }}>
-      <div style={{ fontFamily: 'var(--font-display)', fontSize: 22, color: '#10b981', paddingTop: 2 }}>
+      <div style={{ fontFamily: 'var(--font-display)', fontSize: 22, color: '#d4a84b', paddingTop: 2 }}>
         {item.year}
       </div>
       <div style={{ minHeight: 64 }}>
@@ -139,7 +139,7 @@ export default function Story() {
                     padding: '8px 12px',
                     background: 'linear-gradient(transparent, rgba(6,14,26,0.85))',
                     fontSize: 10, fontWeight: 700, letterSpacing: 2,
-                    textTransform: 'uppercase', color: '#10b981',
+                    textTransform: 'uppercase', color: '#d4a84b',
                   }}>{t('Trénink', 'Training')}</div>
                 </div>
                 <div style={{ aspectRatio: '1', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', position: 'relative' }}>
@@ -149,14 +149,14 @@ export default function Story() {
                     padding: '8px 12px',
                     background: 'linear-gradient(transparent, rgba(6,14,26,0.85))',
                     fontSize: 10, fontWeight: 700, letterSpacing: 2,
-                    textTransform: 'uppercase', color: '#10b981',
+                    textTransform: 'uppercase', color: '#d4a84b',
                   }}>{t('Síla', 'Strength')}</div>
                 </div>
               </div>
             </ScrollReveal>
 
             <ScrollReveal delay="d2" style={{
-              padding: 32, background: '#060e1a', borderLeft: '3px solid #10b981',
+              padding: 32, background: '#060e1a', borderLeft: '3px solid #d4a84b',
             }}>
               <p style={{ fontSize: 18, fontStyle: 'italic', lineHeight: 1.7, color: '#cbd5e1' }}>
                 {t(
@@ -164,7 +164,7 @@ export default function Story() {
                   '\u201CMy whole life, people told me what I couldn\u2019t do. So I showed them what I could. Now I do the same for my clients.\u201D'
                 )}
               </p>
-              <div style={{ marginTop: 12, fontSize: 13, color: '#10b981', fontWeight: 700 }}>- Jakub Nosek</div>
+              <div style={{ marginTop: 12, fontSize: 13, color: '#d4a84b', fontWeight: 700 }}>- Jakub Nosek</div>
             </ScrollReveal>
           </div>
         </div>
@@ -188,8 +188,8 @@ export default function Story() {
         .story-expand-btn {
           padding: 10px 24px;
           background: none;
-          border: 1px solid rgba(16,185,129,0.3);
-          color: #10b981;
+          border: 1px solid rgba(212,168,75,0.3);
+          color: #d4a84b;
           font-family: var(--font-body);
           font-size: 13px;
           font-weight: 700;
@@ -198,8 +198,8 @@ export default function Story() {
           transition: all 0.2s;
         }
         .story-expand-btn:hover {
-          border-color: #10b981;
-          background: rgba(16,185,129,0.06);
+          border-color: #d4a84b;
+          background: rgba(212,168,75,0.06);
         }
         @media (max-width: 1024px) {
           .story-layout { grid-template-columns: 1fr; gap: 48px; }

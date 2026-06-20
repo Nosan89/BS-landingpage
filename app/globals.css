@@ -5,9 +5,9 @@
   --color-navy: #0a1628;
   --color-navy-light: #0f1f38;
   --color-navy-lighter: #162a4a;
-  --color-emerald: #10b981;
-  --color-emerald-bright: #34d399;
-  --color-emerald-dark: #059669;
+  --color-gold: #d4a84b;
+  --color-gold-bright: #e8be6a;
+  --color-gold-dark: #b8923a;
   --color-red-accent: #ef4444;
 
   --font-display: 'Bebas Neue', sans-serif;
@@ -15,8 +15,8 @@
 }
 
 :root {
-  --emerald-glow: rgba(16, 185, 129, 0.12);
-  --emerald-glow-strong: rgba(16, 185, 129, 0.25);
+  --gold-glow: rgba(212, 168, 75, 0.12);
+  --gold-glow-strong: rgba(212, 168, 75, 0.25);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -81,21 +81,21 @@ body {
   font-weight: 800;
   letter-spacing: 3.5px;
   text-transform: uppercase;
-  color: #10b981;
+  color: #d4a84b;
   margin-bottom: 20px;
 }
 .section-label::before {
   content: '';
   width: 40px;
   height: 2px;
-  background: #10b981;
+  background: #d4a84b;
 }
 
 /* ===== SECTION DIVIDER ===== */
 .section-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(16,185,129,0.15), transparent);
+  background: linear-gradient(90deg, transparent, rgba(212,168,75,0.15), transparent);
 }
 
 /* ===== BUTTONS ===== */
@@ -104,7 +104,7 @@ body {
   align-items: center;
   gap: 10px;
   padding: 16px 40px;
-  background: #10b981;
+  background: #d4a84b;
   color: #060e1a;
   font-family: var(--font-body);
   font-size: 14px;
@@ -117,9 +117,9 @@ body {
   text-transform: uppercase;
 }
 .btn-primary:hover {
-  background: #34d399;
+  background: #e8be6a;
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(16,185,129,0.35);
+  box-shadow: 0 12px 40px rgba(212,168,75,0.35);
 }
 .btn-primary svg { transition: transform 0.3s; }
 .btn-primary:hover svg { transform: translateX(4px); }
@@ -139,7 +139,7 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
-.btn-ghost:hover { border-color: #10b981; color: #34d399; }
+.btn-ghost:hover { border-color: #d4a84b; color: #e8be6a; }
 
 /* ===== PHONE FRAME ===== */
 .phone-frame {
@@ -167,7 +167,7 @@ body {
 .faq-answer.open { max-height: 400px; }
 
 /* ===== COMPARISON TABLE ===== */
-.comp-check { color: #10b981; font-size: 18px; }
+.comp-check { color: #d4a84b; font-size: 18px; }
 .comp-x { color: #ef4444; font-size: 18px; }
 
 /* ===== NAVBAR MOBILE ===== */

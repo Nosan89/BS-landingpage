@@ -133,7 +133,7 @@ export default function QuestionnaireModal() {
         style={{
           width: '100%', maxWidth: 560,
           background: '#0f1f38',
-          border: '1px solid rgba(16,185,129,0.12)',
+          border: '1px solid rgba(212,168,75,0.12)',
           boxShadow: '0 40px 100px rgba(0,0,0,0.7)',
           position: 'relative',
           maxHeight: 'calc(100vh - 32px)',
@@ -162,7 +162,7 @@ export default function QuestionnaireModal() {
         {status === 'idle' && (
           <div style={{ height: 3, background: 'rgba(255,255,255,0.06)' }}>
             <div style={{
-              height: '100%', background: '#10b981',
+              height: '100%', background: '#d4a84b',
               width: `${progress}%`, transition: 'width 0.4s cubic-bezier(0.16,1,0.3,1)',
             }} />
           </div>
@@ -175,11 +175,11 @@ export default function QuestionnaireModal() {
             <div style={{ textAlign: 'center', padding: '20px 0' }}>
               <div style={{
                 width: 56, height: 56, borderRadius: '50%',
-                background: 'rgba(16,185,129,0.12)', border: '1px solid rgba(16,185,129,0.3)',
+                background: 'rgba(212,168,75,0.12)', border: '1px solid rgba(212,168,75,0.3)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 margin: '0 auto 24px',
               }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a84b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 6L9 17l-5-5" />
                 </svg>
               </div>
@@ -215,7 +215,7 @@ export default function QuestionnaireModal() {
             <>
               {/* Step indicator */}
               <div style={{ marginBottom: 28 }}>
-                <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: '2.5px', textTransform: 'uppercase', color: '#10b981', marginBottom: 6 }}>
+                <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: '2.5px', textTransform: 'uppercase', color: '#d4a84b', marginBottom: 6 }}>
                   {t(`Krok ${step} ze ${TOTAL_STEPS}`, `Step ${step} of ${TOTAL_STEPS}`)}
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 28, letterSpacing: 1 }}>
@@ -421,7 +421,7 @@ export default function QuestionnaireModal() {
           transition: border-color 0.2s;
         }
         .modal-input::placeholder { color: #475569; }
-        .modal-input:focus { border-color: #10b981; }
+        .modal-input:focus { border-color: #d4a84b; }
         .modal-chip {
           padding: 8px 16px;
           border: 1px solid rgba(255,255,255,0.1);
@@ -434,11 +434,11 @@ export default function QuestionnaireModal() {
           transition: all 0.2s;
           white-space: nowrap;
         }
-        .modal-chip:hover { border-color: rgba(16,185,129,0.4); color: #fff; }
+        .modal-chip:hover { border-color: rgba(212,168,75,0.4); color: #fff; }
         .modal-chip.selected {
-          background: rgba(16,185,129,0.12);
-          border-color: #10b981;
-          color: #34d399;
+          background: rgba(212,168,75,0.12);
+          border-color: #d4a84b;
+          color: #e8be6a;
         }
         .modal-select-card {
           width: 100%;
@@ -453,11 +453,11 @@ export default function QuestionnaireModal() {
           cursor: pointer;
           transition: all 0.2s;
         }
-        .modal-select-card:hover { border-color: rgba(16,185,129,0.4); color: #fff; }
+        .modal-select-card:hover { border-color: rgba(212,168,75,0.4); color: #fff; }
         .modal-select-card.selected {
-          background: rgba(16,185,129,0.1);
-          border-color: #10b981;
-          color: #34d399;
+          background: rgba(212,168,75,0.1);
+          border-color: #d4a84b;
+          color: #e8be6a;
         }
         @media (max-width: 600px) {
           .modal-body-pad { padding: 28px 20px 32px !important; }
@@ -471,7 +471,7 @@ function Field({ label, required, children }: { label: string; required?: boolea
   return (
     <div>
       <label style={{ display: 'block', fontSize: 12, fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', color: '#64748b', marginBottom: 8 }}>
-        {label}{required && <span style={{ color: '#10b981', marginLeft: 2 }}>*</span>}
+        {label}{required && <span style={{ color: '#d4a84b', marginLeft: 2 }}>*</span>}
       </label>
       {children}
     </div>

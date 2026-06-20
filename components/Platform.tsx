@@ -148,8 +148,8 @@ export default function Platform() {
         }
         .plat-tab:hover { color: #cbd5e1; }
         .plat-tab-active {
-          color: #10b981 !important;
-          border-bottom-color: #10b981 !important;
+          color: #d4a84b !important;
+          border-bottom-color: #d4a84b !important;
         }
         .plat-content {
           margin-top: 48px;

@@ -14,7 +14,7 @@ export default function InlineCTA({ cs, en }: InlineCTAProps) {
 
   return (
     <div style={{
-      borderTop: '1px solid rgba(16,185,129,0.2)',
+      borderTop: '1px solid rgba(212,168,75,0.2)',
       padding: '48px 24px',
     }}>
       <div style={{
@@ -30,18 +30,18 @@ export default function InlineCTA({ cs, en }: InlineCTAProps) {
           onClick={openModal}
           className="nav-cta-btn"
           style={{
-            padding: '10px 28px', background: '#10b981', color: '#060e1a',
+            padding: '10px 28px', background: '#d4a84b', color: '#060e1a',
             fontFamily: 'var(--font-body)', fontSize: 13, fontWeight: 800,
             letterSpacing: '0.5px', border: 'none', cursor: 'pointer', textTransform: 'uppercase',
             transition: 'all 0.3s',
           }}
           onMouseEnter={e => {
-            (e.currentTarget as HTMLElement).style.background = '#34d399'
+            (e.currentTarget as HTMLElement).style.background = '#e8be6a'
             ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)'
-            ;(e.currentTarget as HTMLElement).style.boxShadow = '0 8px 30px rgba(16,185,129,0.3)'
+            ;(e.currentTarget as HTMLElement).style.boxShadow = '0 8px 30px rgba(212,168,75,0.3)'
           }}
           onMouseLeave={e => {
-            (e.currentTarget as HTMLElement).style.background = '#10b981'
+            (e.currentTarget as HTMLElement).style.background = '#d4a84b'
             ;(e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
             ;(e.currentTarget as HTMLElement).style.boxShadow = 'none'
           }}

@@ -65,7 +65,7 @@ export default function FAQ() {
                   onClick={() => setOpen(open === i ? null : i)}
                   style={{
                     width: '100%', padding: '22px 0', background: 'none', border: 'none',
-                    color: open === i ? '#34d399' : '#ffffff',
+                    color: open === i ? '#e8be6a' : '#ffffff',
                     fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 700,
                     textAlign: 'left', cursor: 'pointer',
                     display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16,
@@ -75,7 +75,7 @@ export default function FAQ() {
                   <span>{t(faq.qCs, faq.qEn)}</span>
                   <span style={{
                     width: 24, height: 24, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    color: '#10b981', flexShrink: 0, fontSize: 20, fontWeight: 300,
+                    color: '#d4a84b', flexShrink: 0, fontSize: 20, fontWeight: 300,
                     transform: open === i ? 'rotate(45deg)' : 'rotate(0)',
                     transition: 'transform 0.3s',
                   }}>+</span>

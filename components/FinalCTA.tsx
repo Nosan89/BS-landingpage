@@ -14,7 +14,7 @@ export default function FinalCTA() {
         position: 'absolute', top: '50%', left: '50%',
         transform: 'translate(-50%, -50%)',
         width: 900, height: 900,
-        background: 'radial-gradient(circle, var(--emerald-glow) 0%, transparent 55%)',
+        background: 'radial-gradient(circle, var(--gold-glow) 0%, transparent 55%)',
         pointerEvents: 'none',
       }} />
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>

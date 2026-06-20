@@ -94,7 +94,7 @@ export default function Services() {
                     padding: '24px 28px',
                     background: '#0f1f38',
                     border: '1px solid rgba(255,255,255,0.04)',
-                    boxShadow: isOpen ? 'inset 0 2px 0 #10b981' : 'inset 0 2px 0 transparent',
+                    boxShadow: isOpen ? 'inset 0 2px 0 #d4a84b' : 'inset 0 2px 0 transparent',
                     transition: 'box-shadow 0.3s, border-color 0.3s, transform 0.4s',
                   }}
                 >
@@ -102,10 +102,10 @@ export default function Services() {
                   <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10 }}>
                     <div style={{
                       width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      background: 'var(--emerald-glow)', border: '1px solid rgba(16,185,129,0.1)',
+                      background: 'var(--gold-glow)', border: '1px solid rgba(212,168,75,0.1)',
                       flexShrink: 0, fontSize: 18,
                     }}>
-                      <Icon size={20} strokeWidth={1.5} aria-hidden="true" color="#34d399" />
+                      <Icon size={20} strokeWidth={1.5} aria-hidden="true" color="#e8be6a" />
                     </div>
                     <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 22, letterSpacing: 1, lineHeight: 1 }}>
                       {t(svc.titleCs, svc.titleEn)}
@@ -133,10 +133,10 @@ export default function Services() {
                         {svc.tags.map((tag, ti) => (
                           <span key={ti} style={{
                             padding: '3px 10px',
-                            background: 'rgba(16,185,129,0.06)',
-                            border: '1px solid rgba(16,185,129,0.1)',
+                            background: 'rgba(212,168,75,0.06)',
+                            border: '1px solid rgba(212,168,75,0.1)',
                             fontSize: 10, fontWeight: 700, letterSpacing: '1.2px',
-                            textTransform: 'uppercase', color: '#10b981',
+                            textTransform: 'uppercase', color: '#d4a84b',
                           }}>
                             {tag.includes(' / ') ? t(tag.split(' / ')[0], tag.split(' / ')[1]) : tag}
                           </span>
@@ -165,14 +165,14 @@ export default function Services() {
           gap: 20px;
           margin-top: 60px;
         }
-        .svc-card:hover { border-color: rgba(16,185,129,0.12) !important; transform: translateY(-3px); }
+        .svc-card:hover { border-color: rgba(212,168,75,0.12) !important; transform: translateY(-3px); }
         .svc-more-btn {
           display: block;
           margin-top: 8px;
           padding: 4px 0;
           background: none;
           border: none;
-          color: #10b981;
+          color: #d4a84b;
           font-family: var(--font-body);
           font-size: 12px;
           font-weight: 700;
@@ -180,7 +180,7 @@ export default function Services() {
           letter-spacing: 0.5px;
           transition: color 0.2s;
         }
-        .svc-more-btn:hover { color: #34d399; }
+        .svc-more-btn:hover { color: #e8be6a; }
         @media (max-width: 1024px) {
           .services-grid { grid-template-columns: 1fr; }
         }

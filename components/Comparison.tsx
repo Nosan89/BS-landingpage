@@ -53,7 +53,7 @@ export default function Comparison() {
               <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1, textAlign: 'center', background: 'rgba(239,68,68,0.06)', color: '#94a3b8' }}>
                 {t('BĚŽNÝ TRENÉR', 'TYPICAL COACH')}
               </div>
-              <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1, textAlign: 'center', background: 'var(--emerald-glow)', color: '#10b981' }}>
+              <div style={{ padding: '20px 24px', fontFamily: 'var(--font-display)', fontSize: 18, letterSpacing: 1, textAlign: 'center', background: 'var(--gold-glow)', color: '#d4a84b' }}>
                 BioStrategy
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function Comparison() {
                 <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#64748b', background: 'rgba(239,68,68,0.02)', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                   {renderCell(row, 'bad')}
                 </div>
-                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#34d399', background: 'rgba(16,185,129,0.03)', fontWeight: 600, borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+                <div style={{ padding: '16px 12px', fontSize: 14, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#e8be6a', background: 'rgba(212,168,75,0.03)', fontWeight: 600, borderTop: '1px solid rgba(255,255,255,0.04)' }}>
                   {renderCell(row, 'good')}
                 </div>
               </div>

@@ -21,13 +21,13 @@ export default function Hero() {
       <div style={{
         position: 'absolute', top: -300, right: -300,
         width: 900, height: 900,
-        background: 'radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 65%)',
+        background: 'radial-gradient(circle, rgba(212,168,75,0.08) 0%, transparent 65%)',
         pointerEvents: 'none',
       }} />
       <div style={{
         position: 'absolute', bottom: -200, left: -200,
         width: 600, height: 600,
-        background: 'radial-gradient(circle, rgba(16,185,129,0.05) 0%, transparent 65%)',
+        background: 'radial-gradient(circle, rgba(212,168,75,0.05) 0%, transparent 65%)',
         pointerEvents: 'none',
       }} />
 
@@ -38,11 +38,11 @@ export default function Hero() {
             <div className="animate-fadeIn" style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
               padding: '6px 16px 6px 12px',
-              background: 'var(--emerald-glow)', border: '1px solid rgba(16,185,129,0.15)',
+              background: 'var(--gold-glow)', border: '1px solid rgba(212,168,75,0.15)',
               fontSize: 11, fontWeight: 800, letterSpacing: '2.5px',
-              textTransform: 'uppercase', color: '#34d399', marginBottom: 28,
+              textTransform: 'uppercase', color: '#e8be6a', marginBottom: 28,
             }}>
-              <span className="animate-pulse-dot" style={{ width: 6, height: 6, background: '#10b981', borderRadius: '50%', display: 'inline-block' }} />
+              <span className="animate-pulse-dot" style={{ width: 6, height: 6, background: '#d4a84b', borderRadius: '50%', display: 'inline-block' }} />
               {t('Přijímám nové klienty', 'Accepting New Clients')}
             </div>
 
@@ -53,7 +53,7 @@ export default function Hero() {
             }} className="animate-fadeUp">
               {t('TVOJE ZDRAVÍ', 'YOUR HEALTH')}<br />
               {t('NENÍ', 'IS NOT A')}
-              <span style={{ color: '#10b981' }}>
+              <span style={{ color: '#d4a84b' }}>
                 {t(' VEDLEJŠÁK', ' SIDE PROJECT')}
               </span>
             </h1>
@@ -80,7 +80,7 @@ export default function Hero() {
           <div className="animate-fadeIn hero-visual" style={{ animationDelay: '0.2s' }}>
             <div style={{
               position: 'relative', zIndex: 2,
-              border: '1px solid rgba(16,185,129,0.1)',
+              border: '1px solid rgba(212,168,75,0.1)',
               overflow: 'hidden',
               boxShadow: '0 40px 80px rgba(0,0,0,0.5)',
             }}>
@@ -97,17 +97,17 @@ export default function Hero() {
             <div style={{
               position: 'absolute', top: -16, right: -16,
               width: '100%', height: '100%',
-              border: '2px solid #10b981', opacity: 0.15,
+              border: '2px solid #d4a84b', opacity: 0.15,
               pointerEvents: 'none', zIndex: 1,
             }} className="hero-photo-accent" />
 
             {/* Floating card 1 */}
             <div className="animate-float hero-floating-card" style={{
               position: 'absolute', bottom: 80, left: -50, zIndex: 3,
-              background: '#0f1f38', border: '1px solid rgba(16,185,129,0.12)',
+              background: '#0f1f38', border: '1px solid rgba(212,168,75,0.12)',
               padding: '14px 18px', boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
             }}>
-              <div style={{ fontSize: 9, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: '#10b981', marginBottom: 6 }}>
+              <div style={{ fontSize: 9, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: '#d4a84b', marginBottom: 6 }}>
                 Recovery
               </div>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, lineHeight: 1 }}>77%</div>
@@ -117,10 +117,10 @@ export default function Hero() {
             {/* Floating card 2 */}
             <div className="animate-float-delayed hero-floating-card" style={{
               position: 'absolute', top: 40, right: -40, zIndex: 3,
-              background: '#0f1f38', border: '1px solid rgba(16,185,129,0.12)',
+              background: '#0f1f38', border: '1px solid rgba(212,168,75,0.12)',
               padding: '14px 18px', boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
             }}>
-              <div style={{ fontSize: 9, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: '#10b981', marginBottom: 6 }}>
+              <div style={{ fontSize: 9, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', color: '#d4a84b', marginBottom: 6 }}>
                 ApoB
               </div>
               <div style={{ fontFamily: 'var(--font-display)', fontSize: 32, lineHeight: 1 }}>1.02</div>
