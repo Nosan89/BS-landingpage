@@ -7,6 +7,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 > **Update:** Sekce "Jak to funguje" přepsána na 5 karet (Realita / Data / Systém / Vedení / Partnerství). Přidána nová sekce "Zní to povědomě?" (5 objection karet) za třísloupcovou sekci.
 >
 > **Opraveno:** hero subheadline CS (operační systém), text sekce osobního příběhu (meningitida ve 3 letech, ZOH 26 Cortina), sekce Kompletní systém (odstraněna zmínka 12 týdnů).
+>
+> **Update:** Sekce "Jak to funguje" přesunuta za osobní příběh a před Kompletní systém. Opraven překlep "efective" → "effective".
 
 ## Tech Stack
 
@@ -21,7 +23,7 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 ```
 app/
   layout.tsx              — Bebas Neue + Manrope fonty, metadata, LangProvider + ModalProvider + Navbar + AnnouncementBanner; pořadí v body: <Navbar /> → <AnnouncementBanner /> → <main>{children}</main>
-  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Pillars → SoundFamiliar → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Services → Platform → [InlineCTA] → Process → FoundingClient → FAQ → FinalCTA → Footer; Navbar a AnnouncementBanner jsou v layout.tsx, ne zde
+  page.tsx                — hlavní landing page + QuestionnaireModal; pořadí sekcí: Hero → Pillars → SoundFamiliar → Credentials → Problem → Comparison → [InlineCTA] → Testimonials → [InlineCTA] → Story → Process → Services → Platform → [InlineCTA] → FoundingClient → FAQ → FinalCTA → Footer; Navbar a AnnouncementBanner jsou v layout.tsx, ne zde
   globals.css             — Tailwind v4 import, CSS custom properties, animace
   api/questionnaire/route.ts — POST endpoint, odesílá email přes Resend
   podminky/page.tsx       — obchodní podmínky (placeholder)

@@ -43,14 +43,14 @@ export default function Home() {
       <div className="section-divider" />
       <Story />
       <div className="section-divider" />
+      <Process />
+      <div className="section-divider" />
       <Services />
       <div className="section-divider" />
       <Platform />
       <ScrollReveal>
         <InlineCTA cs="Chci systém, ne dohady →" en="I want a system, not guesswork →" />
       </ScrollReveal>
-      <div className="section-divider" />
-      <Process />
       <div className="section-divider" />
       <FoundingClient />
       <div className="section-divider" />
