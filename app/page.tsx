@@ -1,6 +1,7 @@
 import QuestionnaireModal from '@/components/QuestionnaireModal'
 import Hero from '@/components/Hero'
 import Pillars from '@/components/Pillars'
+import SoundFamiliar from '@/components/SoundFamiliar'
 import Credentials from '@/components/Credentials'
 import Problem from '@/components/Problem'
 import Comparison from '@/components/Comparison'
@@ -23,6 +24,8 @@ export default function Home() {
       <Hero />
       <div className="section-divider" />
       <Pillars />
+      <div className="section-divider" />
+      <SoundFamiliar />
       <div className="section-divider" />
       <Credentials />
       <div className="section-divider" />
@@ -48,9 +51,6 @@ export default function Home() {
       </ScrollReveal>
       <div className="section-divider" />
       <Process />
-      <ScrollReveal>
-        <InlineCTA cs="Chci začít prvním krokem →" en="I want to start with the first step →" />
-      </ScrollReveal>
       <div className="section-divider" />
       <FoundingClient />
       <div className="section-divider" />
