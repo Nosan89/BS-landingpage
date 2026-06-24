@@ -32,8 +32,8 @@ const faqs = [
   {
     qCs: 'Proč zrovna ty?',
     qEn: 'Why you?',
-    aCs: 'Protože nespojuji jen teorii a data, ale reálnou zkušenost s vrcholovým výkonem. Jsem dvojnásobný olympionik, strength & conditioning coach s fyzio backgroundem a roky praxe s lidmi. BioStrategy jsem vytvořil proto, aby lidé mimo vrcholový sport měli přístup ke strukturovanému vedení, které kombinuje data, trénink, regeneraci a lidský dohled. Dvě olympiády se sluchovým handicapem. Fyzioterapie. Certifikovaný S&C coach. A vlastní platforma od nuly. Nekopíruji - tvořím.',
-    aEn: "Because I don't just combine theory and data - I bring real experience with elite performance. I'm a two-time Olympian, strength & conditioning coach with a physiotherapy background and years of practice with people. I built BioStrategy so that people outside elite sport could access structured coaching that combines data, training, recovery and human oversight. Two Olympics with a hearing impairment. Physiotherapy. Certified S&C coach. A platform built from scratch. I don't copy - I create.",
+    aCs: 'Protože nespojuji jen teorii a data, ale reálnou zkušenost s vrcholovým výkonem. Jsem dvojnásobný olympionik, strength & conditioning coach s fyzio backgroundem a roky praxe s lidmi. BioStrategy jsem vytvořil proto, aby lidé mimo vrcholový sport měli přístup ke strukturovanému vedení, které kombinuje data, trénink, regeneraci a lidský dohled.',
+    aEn: "Because I don't just combine theory and data - I bring real experience with elite performance. I'm a two-time Olympian, strength & conditioning coach with a physiotherapy background and years of practice with people. I built BioStrategy so that people outside elite sport could access structured coaching that combines data, training, recovery and human oversight.",
   },
   {
     qCs: 'Nechceš rovnou skočit do plného systému?',

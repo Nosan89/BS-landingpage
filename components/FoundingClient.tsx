@@ -5,7 +5,7 @@ import { useModal } from './ModalContext'
 import ScrollReveal from './ScrollReveal'
 
 export default function FoundingClient() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const { openModal } = useModal()
 
   return (
@@ -19,9 +19,10 @@ export default function FoundingClient() {
         </ScrollReveal>
         <ScrollReveal delay="d1">
           <p style={{ fontSize: 16, color: '#94a3b8', lineHeight: 1.7, maxWidth: 620, margin: '24px auto 40px' }}>
-            {t(
-              'První klienti BioStrategy vstupují za zvýhodněných podmínek výměnou za detailní zpětnou vazbu a možnost anonymizovaně použít výsledky jako case study. Pilotní cena je dostupná pro první 3 klienty. Kapacita je záměrně omezená.',
-              'The first BioStrategy clients join at preferential conditions in exchange for detailed feedback and permission to use their results as an anonymized case study. Pilot pricing is available for the first 3 clients. Capacity is intentionally limited.'
+            {lang === 'cs' ? (
+              <>První klienti BioStrategy vstupují za zvýhodněných podmínek výměnou za detailní zpětnou vazbu a možnost anonymizovaně použít výsledky jako case study. Pilotní cena je dostupná <strong style={{ color: '#e8be6a' }}>pro první 3 klienty</strong>. Kapacita je záměrně omezená.</>
+            ) : (
+              <>The first BioStrategy clients join at preferential conditions in exchange for detailed feedback and permission to use their results as an anonymized case study. Pilot pricing is available <strong style={{ color: '#e8be6a' }}>for the first 3 clients</strong>. Capacity is intentionally limited.</>
             )}
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
