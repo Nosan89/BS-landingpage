@@ -17,6 +17,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 > **Update:** Sekce "Časovaná bomba" (`Problem`) a "Proč data, ne dojmy" (`Comparison`) zakomentovány v page.tsx (zachovány pro případné obnovení).
 >
 > **Update:** Opraveny texty karet "Jak to funguje": poznám (ne poznáme), odkud začneme, týdně, první měsíc.
+>
+> **Update:** Záložka "Tréninková appka" odstraněna z tech sekce landing page. Screenshot protokolů nahrazen za /images/protokoly.png.
 
 ## Tech Stack
 
@@ -52,7 +54,7 @@ components/
   Comparison.tsx          — tabulka Běžný trenér vs BioStrategy; 9 řádků vč. "Dlouhodobá udržitelnost" (Intenzivní program, pak konec vs. Návyky, které fungují i po skončení spolupráce); indikátory: lucide X (červený sloupec) / Check (emerald sloupec)
   Testimonials.tsx        — klientské reference; pole testimonials (cs/en objekt s quote, name, role); mapuje přes pole, připraveno na více položek; dekorativní emerald uvozovka vlevo nahoře; navy-deep pozadí; karty navy-light
   Services.tsx            — 4 service karty; každá karta zobrazuje ikonu + název + první větu, zbytek + tagy za tlačítkem "Více ↓" (nezávislý useState per karta); ikony: Watch, Droplet, Scan, Dumbbell (lucide-react); podtitulek obsahuje 2 odstavce — druhý: "Žádné 12týdenní výzvy. Stavíme návyky, které fungují i po ukončení spolupráce."; karta "TRÉNINK & PROTOKOLY" — první věta: "Individuální tréninkový plán přes TrainHeroic." / "Individual training plan via TrainHeroic."
-  Platform.tsx            — tabs layout (4 taby, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; tab "TRÉNINKOVÁ APPKA" má comingSoon flag — zobrazuje placeholder s lucide Settings ikonou místo screenshotu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VŠECHNA TVOJE DATA NA JEDNOM MÍSTĚ." / "ALL YOUR DATA IN ONE PLACE."; caption pod obsahem: "Klient nevidí chaos. Vidí priority."
+  Platform.tsx            — tabs layout (3 taby: Coach Dashboard / Krevní markery / Health protokoly, 1 screenshot najednou); přepínání přes useState activeTab, taby horizontálně scrollovatelné na mobilu; každý tab zobrazuje benefit větu zaměřenou na klienta (ne feature list); headline: "VŠECHNA TVOJE DATA NA JEDNOM MÍSTĚ." / "ALL YOUR DATA IN ONE PLACE."; caption pod obsahem: "Klient nevidí chaos. Vidí priority."
   InlineCTA.tsx           — inline pruh s CTA tlačítkem (props: cs, en text); průhledné pozadí, emerald horní linka (opacity 20%); otvírá QuestionnaireModal přes useModal(); použit po Comparison, Testimonials a Platform; tlačítko má identický styl jako Navbar CTA (font-body, 13px, weight 800, uppercase)
   Process.tsx             — 5 karet (01 Realita / 02 Data / 03 Systém / 04 Vedení / 05 Partnerství); každá karta: velké muted číslo (emerald opacity 0.15) + titulek + text + zvýrazněná věta (emerald-bright, weight 600); grid repeat(3,1fr), na mobilu 1 sloupec; pod sekcí CTA tlačítko "CHCI ZAČÍT PRVNÍM KROKEM →" / "START WITH THE FIRST STEP →" (btn-primary, otvírá QuestionnaireModal přes useModal); nadpis: "JAK TO FUNGUJE" / "HOW IT WORKS"
   FAQ.tsx                 — accordion; 6 otázek vč. "Nechceš rovnou skočit do plného systému?" (osobní trénink bez závazku)
@@ -108,8 +110,7 @@ Settings → Domains → Add → biostrategy.co
 ### Screenshoty platformy — `components/Platform.tsx`
 - `coach_triage.jpg` — coach dashboard (dark mode)
 - `blood_markers.jpg` — blood markers (dark mode)
-- `training_app.jpg` — perform / training app
-- `protocols.jpg` — health protocols
+- `protokoly.png` — health protokoly
 
 Až přibudou nové screenshoty, stačí soubory přepsat (stejný název) — kód se nemusí měnit.
 
