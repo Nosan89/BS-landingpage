@@ -3,8 +3,8 @@ import Hero from '@/components/Hero'
 import Pillars from '@/components/Pillars'
 import SoundFamiliar from '@/components/SoundFamiliar'
 import Credentials from '@/components/Credentials'
-import Problem from '@/components/Problem'
-import Comparison from '@/components/Comparison'
+// import Problem from '@/components/Problem'
+// import Comparison from '@/components/Comparison'
 import Testimonials from '@/components/Testimonials'
 import Story from '@/components/Story'
 import Services from '@/components/Services'
@@ -29,9 +29,9 @@ export default function Home() {
       <div className="section-divider" />
       <Credentials />
       <div className="section-divider" />
-      <Problem />
-      <div className="section-divider" />
-      <Comparison />
+      {/* <Problem /> */}
+      {/* <div className="section-divider" /> */}
+      {/* <Comparison /> */}
       <ScrollReveal>
         <InlineCTA cs="Chci takový přístup →" en="I want this approach →" />
       </ScrollReveal>
