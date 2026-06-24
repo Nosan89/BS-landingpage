@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <Image src="/images/logo_transparent.png" alt="BioStrategy" height={32} width={140} style={{ height: 32, width: 'auto' }} />
+          <Image src="/images/logo_transparent_gold.png" alt="BioStrategy" height={32} width={140} style={{ height: 32, width: 'auto' }} />
         </a>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div style={{

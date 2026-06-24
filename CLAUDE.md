@@ -11,6 +11,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 > **Update:** Sekce "Jak to funguje" přesunuta za osobní příběh a před Kompletní systém. Opraven překlep "efective" → "effective".
 >
 > **Barvy:** Barvy landing page přehozeny z emerald (zelená) na navy/gold paletu konzistentní s BioStrategy platformou. Accent: #d4a84b. Emerald tokeny i hardcoded hex nahrazeny napříč globals.css i komponentami (#10b981→#d4a84b, #34d399→#e8be6a, #059669→#b8923a, glow rgba(16,185,129,…)→rgba(212,168,75,…)); CSS tokeny přejmenovány `--color-emerald*`→`--color-gold*` a `--emerald-glow*`→`--gold-glow*`. Navy a sémantické barvy (danger #ef4444) beze změny.
+>
+> **Update:** Logo nahrazeno za zlatou verzi (logo_transparent_gold.png). Počet pilotních míst změněn z 10 na 5 (řízeno ENV var `NEXT_PUBLIC_PILOT_SPOTS_REMAINING` - nastavit hodnotu `5` ve Vercelu; v kódu se počet nikde nezadává natvrdo).
 
 ## Tech Stack
 
