@@ -21,6 +21,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 > **Update:** Záložka "Tréninková appka" odstraněna z tech sekce landing page. Screenshot protokolů nahrazen za /images/protokoly.png.
 >
 > **Update:** Textové úpravy: announcement banner (pilotní fáze, bez čísla míst), founding client (3 místa), FAQ — přepsány všechny odpovědi (Pro koho, Kolik to stojí, Praha, Wearable, Proč ty).
+>
+> **Update:** Badge "Přijímám nové klienty" odstraněn z hero sekce — informaci zajišťuje announcement banner.
 
 ## Tech Stack
 

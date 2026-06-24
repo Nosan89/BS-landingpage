@@ -35,17 +35,6 @@ export default function Hero() {
         <div className="hero-grid">
           {/* Left: text */}
           <div>
-            <div className="animate-fadeIn" style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              padding: '6px 16px 6px 12px',
-              background: 'var(--gold-glow)', border: '1px solid rgba(212,168,75,0.15)',
-              fontSize: 11, fontWeight: 800, letterSpacing: '2.5px',
-              textTransform: 'uppercase', color: '#e8be6a', marginBottom: 28,
-            }}>
-              <span className="animate-pulse-dot" style={{ width: 6, height: 6, background: '#d4a84b', borderRadius: '50%', display: 'inline-block' }} />
-              {t('Přijímám nové klienty', 'Accepting New Clients')}
-            </div>
-
             <h1 style={{
               fontFamily: 'var(--font-display)',
               fontSize: 'clamp(52px, 6.5vw, 88px)',
