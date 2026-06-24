@@ -15,6 +15,8 @@ Landing page pro biostrategy.co — health coaching Jakuba Noska.
 > **Update:** Logo nahrazeno za zlatou verzi (logo_transparent_gold.png). Počet pilotních míst změněn z 10 na 5 (řízeno ENV var `NEXT_PUBLIC_PILOT_SPOTS_REMAINING` - nastavit hodnotu `5` ve Vercelu; v kódu se počet nikde nezadává natvrdo).
 >
 > **Update:** Sekce "Časovaná bomba" (`Problem`) a "Proč data, ne dojmy" (`Comparison`) zakomentovány v page.tsx (zachovány pro případné obnovení).
+>
+> **Update:** Opraveny texty karet "Jak to funguje": poznám (ne poznáme), odkud začneme, týdně, první měsíc.
 
 ## Tech Stack
 
